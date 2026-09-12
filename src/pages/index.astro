@@ -1,0 +1,19 @@
+---
+import { getCollection, render } from "astro:content";
+import ProjectLayout from "../layouts/ProjectLayout.astro";
+
+const entries = await getCollection("project");
+
+const readme = entries.find((entry) => entry.id === "readme");
+
+if (!readme) {
+  throw new Error("README.md not found in the project collection.");
+}
+
+const { Content } = await render(readme);
+---
+
+<ProjectLayout title="Point Cloud Workflow">
+  <Content />
+</ProjectLayout>
+

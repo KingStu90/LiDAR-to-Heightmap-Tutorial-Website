@@ -1,0 +1,70 @@
+---
+import { getCollection } from "astro:content";
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+
+const entries = await getCollection("project");
+
+const resources = entries.filter((entry) =>
+  entry.id.startsWith("07_credits_and_resources/")
+);
+
+---
+
+<ProjectLayout title="Resources">
+  <h1>Resources</h1>
+
+  <p>
+    Additional resources, downloads, examples, and project references.
+  </p>
+
+  <div class="resource-list">
+    {
+      resources.map((entry) => {
+        const slug = entry.id.replace("07_credits_and_resources/", "");
+
+        return (
+          <a href={`/resources/${slug}/`} class="resource-card">
+            <h2>{entry.data.title ?? slug}</h2>
+            <span>View resource →</span>
+          </a>
+        );
+      })
+    }
+  </div>
+</ProjectLayout>
+
+<style>
+  .resource-list {
+    display: grid;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .resource-card {
+    display: block;
+    padding: 20px 24px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition:
+      border-color 0.15s ease,
+      box-shadow 0.15s ease;
+  }
+
+  .resource-card:hover {
+    border-color: #0891b2;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+  }
+
+  .resource-card h2 {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+  }
+
+  .resource-card span {
+    color: #0891b2;
+    font-size: 0.9rem;
+  }
+</style>
+

@@ -1,0 +1,411 @@
+---
+import Sidebar from "../components/Sidebar.astro";
+import "satteri-callouts/theme/obsidian";
+
+interface Props {
+  title?: string;
+}
+
+const { title = "LiDAR to Heightmap Tutorial" } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <Sidebar />
+
+    <div class="page">
+      <main>
+        <slot />
+      </main>
+
+      <footer>
+        © 2026 Stuart King
+      </footer>
+    </div>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button" aria-label="Close">
+        &times;
+      </button>
+
+      <button
+        class="lightbox-prev"
+        type="button"
+        aria-label="Previous image"
+      >
+        &#8592;
+      </button>
+
+      <img class="lightbox-image" src="" alt="" />
+
+      <button
+        class="lightbox-next"
+        type="button"
+        aria-label="Next image"
+      >
+        &#8594;
+      </button>
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    font-family:
+      Inter,
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
+
+    color: #1f2937;
+    background: #f3f4f6;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .page {
+    margin-left: 280px;
+    min-height: 100vh;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 56px 100px;
+    background: #f8f8f6;
+    min-height: 100vh;
+  }
+
+  footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 56px 40px;
+  background: #f8f8f6;
+  color: #6b7280;
+  font-size: 0.8rem;
+  text-align: center;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #111827;
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+
+  h2 {
+    margin-top: 2.5rem;
+  }
+
+  p {
+    line-height: 1.7;
+  }
+
+  a {
+    color: #0F7F99;
+  }
+
+  table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+    margin: 1.5rem 0;
+    overflow: hidden;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+  }
+
+  th,
+  td {
+    padding: 8px 12px;
+    border-right: 1px solid #d0d7de;
+    border-bottom: 1px solid #d0d7de;
+    text-align: center;
+  }
+
+  th {
+    background: #f6f8fa;
+    font-weight: 600;
+  }
+
+  th:last-child,
+  td:last-child {
+    border-right: 0;
+  }
+
+  tr:last-child td {
+    border-bottom: 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  pre {
+    overflow-x: auto;
+    padding: 18px;
+    background: #1f2937;
+    color: #f9fafb;
+    border-radius: 8px;
+  }
+
+  code {
+    font-family:
+      "SFMono-Regular",
+      Consolas,
+      "Liberation Mono",
+      monospace;
+  }
+
+  :not(pre) > code {
+    background: #D1D1D1;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    padding: 0.1em 0.3em;
+}
+
+  /* Callouts */
+
+  .callout {
+    margin: 1.5rem 0;
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    border-left: 4px solid;
+    background: #f8f8f8;
+  }
+
+  .callout-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+  }
+
+  .callout-content {
+    margin-top: 0.5rem;
+  }
+
+  .callout-content p:first-child {
+    margin-top: 0;
+  }
+
+  .callout-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* NOTE */
+
+  .callout[data-callout="note"] {
+    --callout-color: 68, 138, 255;
+    border-color: rgb(var(--callout-color));
+    background: rgba(var(--callout-color), 0.08);
+    color: #1f2937;
+  }
+
+  /* TIP */
+
+  .callout[data-callout="tip"] {
+    --callout-color: 0, 191, 165;
+    border-color: rgb(var(--callout-color));
+    background: rgba(var(--callout-color), 0.08);
+    color: #1f2937;
+  }
+
+  /* IMPORTANT */
+
+  .callout[data-callout="important"] {
+    --callout-color: 191, 0, 25;
+    border-color: rgb(var(--callout-color));
+    background: rgba(var(--callout-color), 0.08);
+    color: #1f2937;
+  }
+
+  /* WARNING */
+
+  .callout[data-callout="warning"] {
+    --callout-color: 255, 145, 0;
+    border-color: rgb(var(--callout-color));
+    background: rgba(var(--callout-color), 0.08);
+    color: #1f2937;
+  }
+
+  /* CAUTION */
+
+.callout[data-callout="caution"] {
+    --callout-color: 255, 82, 82;
+    border-color: rgb(var(--callout-color));
+    background: rgba(var(--callout-color), 0.08);
+    color: #1f2937;
+  }
+
+  .callout[data-callout="tip"] .callout-title {
+    color: rgb(0, 191, 165);
+  }
+
+  .callout[data-callout="important"] .callout-title {
+    color: rgb(191, 0, 25);
+  }
+
+   /* Image lightbox */
+
+  .page main img {
+    cursor: zoom-in;
+  }
+
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.85);
+  }
+
+  .lightbox.open {
+    display: flex;
+  }
+
+  .lightbox-image {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .lightbox button {
+    position: fixed;
+    border: 0;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .lightbox button:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+  .lightbox-close {
+    top: 20px;
+    right: 20px;
+  }
+
+  .lightbox-prev {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .lightbox-next {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: 800px) {
+    .page {
+      margin-left: 0;
+    }
+
+    main {
+      padding: 40px 24px 80px;
+    }
+    
+    footer {
+      padding: 24px;
+    }
+  }
+</style>
+
+<script>
+  const images = Array.from(document.querySelectorAll(".page main img"));
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = document.querySelector(".lightbox-image");
+  const closeButton = document.querySelector(".lightbox-close");
+  const previousButton = document.querySelector(".lightbox-prev");
+  const nextButton = document.querySelector(".lightbox-next");
+
+  let currentIndex = 0;
+
+  function showImage(index) {
+    currentIndex = (index + images.length) % images.length;
+
+    const image = images[currentIndex];
+
+    lightboxImage.src = image.src;
+    lightboxImage.alt = image.alt;
+
+    lightbox.classList.add("open");
+    lightbox.setAttribute("aria-hidden", "false");
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+  }
+
+  images.forEach((image, index) => {
+    image.addEventListener("click", () => {
+      showImage(index);
+    });
+  });
+
+  closeButton.addEventListener("click", closeLightbox);
+
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+  });
+  
+  previousButton.addEventListener("click", () => {
+    showImage(currentIndex - 1);
+  });
+
+  nextButton.addEventListener("click", () => {
+    showImage(currentIndex + 1);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (!lightbox.classList.contains("open")) return;
+
+    if (event.key === "Escape") {
+      closeLightbox();
+    }
+
+    if (event.key === "ArrowLeft") {
+      showImage(currentIndex - 1);
+    }
+
+    if (event.key === "ArrowRight") {
+      showImage(currentIndex + 1);
+    }
+  });
+</script>

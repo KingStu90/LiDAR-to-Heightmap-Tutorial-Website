@@ -1,0 +1,28 @@
+---
+import { getCollection, render } from "astro:content";
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("project");
+
+  const resources = entries.filter((entry) =>
+    entry.id.startsWith("07_credits_and_resources/")
+  );
+
+  return resources.map((entry) => ({
+    params: {
+      slug: entry.id
+        .replace("07_credits_and_resources/", "")
+        .replace(/\.md$/, ""),
+    },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<ProjectLayout title={entry.data.title ?? "Resources"}>
+  <Content />
+</ProjectLayout>

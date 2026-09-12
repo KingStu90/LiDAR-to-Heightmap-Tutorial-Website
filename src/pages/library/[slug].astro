@@ -1,0 +1,28 @@
+---
+import { getCollection, render } from "astro:content";
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("project");
+
+  const library = entries.filter((entry) =>
+    entry.id.startsWith("05_library/")
+  );
+
+  return library.map((entry) => ({
+    params: {
+      slug: entry.id
+        .replace("05_library/", "")
+        .replace(/\.md$/, ""),
+    },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<ProjectLayout title={entry.data.title ?? "Library"}>
+  <Content />
+</ProjectLayout>
