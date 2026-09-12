@@ -40,7 +40,7 @@ const getHeading = (entry) => {
 
 <aside class="sidebar">
   <div class="brand">
-    <a href="/">LiDAR-to-Heightmap</a>
+    <a href={`${import.meta.env.BASE_URL}/`}>LiDAR-to-Heightmap</a>
     <div class="brand-subtitle">Beginner Tutorial</div>
   </div>
 
@@ -48,8 +48,8 @@ const getHeading = (entry) => {
     <div class="section-title">PROJECT</div>
 
     <a
-      href="/"
-      class:list={{ active: currentPath === "/" }}
+      href={`${import.meta.env.BASE_URL}/`}
+      class:list={{ active: currentPath === `${import.meta.env.BASE_URL}/` }}
       class="nav-link"
     >
       Project Overview
@@ -60,9 +60,11 @@ const getHeading = (entry) => {
     {
       tutorialSteps.map(([number, title, slug]) => (
         <a
-          href={`/tutorial/${slug}/`}
+          href={`${import.meta.env.BASE_URL}/tutorial/${slug}/`}
           class:list={{
-            active: currentPath === `/tutorial/${slug}/`,
+            active:
+              currentPath ===
+              `${import.meta.env.BASE_URL}/tutorial/${slug}/`,
           }}
           class="step-link"
         >
@@ -72,46 +74,49 @@ const getHeading = (entry) => {
       ))
     }
 
-<div class="section-title">RESOURCES</div>
+    <div class="section-title">RESOURCES</div>
 
-{
-  resources.map((entry) => {
-    const slug = entry.id.replace("07_credits_and_resources/", "");
+    {
+      resources.map((entry) => {
+        const slug = entry.id.replace("07_credits_and_resources/", "");
 
-    return (
-      <a
-        href={`/resources/${slug}/`}
-        class="sub-link"
-        class:list={{
-          active: currentPath === `/resources/${slug}/`,
-        }}
-      >
-        {getHeading(entry)}
-      </a>
-    );
-  })
-}
+        return (
+          <a
+            href={`${import.meta.env.BASE_URL}/resources/${slug}/`}
+            class="sub-link"
+            class:list={{
+              active:
+                currentPath ===
+                `${import.meta.env.BASE_URL}/resources/${slug}/`,
+            }}
+          >
+            {getHeading(entry)}
+          </a>
+        );
+      })
+    }
 
-<div class="section-title">LIBRARY</div>
+    <div class="section-title">LIBRARY</div>
 
-{
-  library.map((entry) => {
-    const slug = entry.id.replace("05_library/", "");
+    {
+      library.map((entry) => {
+        const slug = entry.id.replace("05_library/", "");
 
-    return (
-      <a
-        href={`/library/${slug}/`}
-        class="sub-link"
-        class:list={{
-          active: currentPath === `/library/${slug}/`,
-        }}
-      >
-        {getHeading(entry)}
-      </a>
-    );
-  })
-}
-
+        return (
+          <a
+            href={`${import.meta.env.BASE_URL}/library/${slug}/`}
+            class="sub-link"
+            class:list={{
+              active:
+                currentPath ===
+                `${import.meta.env.BASE_URL}/library/${slug}/`,
+            }}
+          >
+            {getHeading(entry)}
+          </a>
+        );
+      })
+    }
   </nav>
 </aside>
 
@@ -155,12 +160,12 @@ const getHeading = (entry) => {
     line-height: 1.35;
   }
 
-.brand-subtitle {
-  margin-top: 6px;
-  color: #DBD7D1;
-  font-size: 0.7rem;
-  line-height: 1.4;
-}
+  .brand-subtitle {
+    margin-top: 6px;
+    color: #DBD7D1;
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
 
   nav {
     display: flex;
@@ -246,7 +251,6 @@ const getHeading = (entry) => {
     color: #67e8f9;
   }
 
-
   @media (max-width: 800px) {
     .sidebar {
       position: static;
@@ -255,3 +259,4 @@ const getHeading = (entry) => {
     }
   }
 </style>
+
