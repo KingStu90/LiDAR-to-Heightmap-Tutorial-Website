@@ -24,13 +24,13 @@ In general, I find CloudCompare **Kriging** to produce a **sharper raster** than
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="/photos/09b_cc_kriging.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/09b_cc_kriging.webp"
       alt="Kriging interpolate">
       <br>
       <strong>CloudCompare Kriging</strong>
     </td>
     <td width="50%" align="center">
-      <img src="/photos/09c_cc_interpolate.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/09c_cc_interpolate.webp"
       alt="CloudCompare Interpolate">
       <br>
       <strong>CloudCompare Interpolate</strong>
@@ -86,13 +86,13 @@ done
 
 ## Previous Step
 
-[**Step 9a: Merging Point Cloud**](/tutorial/09a-merging-point-cloud/)  ←
+[**Step 9a: Merging Point Cloud**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/09a-merging-point-cloud/)  ←
 
 ## Next Step
 
-[**Step 10: Finalizing Heightmap**](/tutorial/10-finalizing-heightmap/) →
+[**Step 10: Finalizing Heightmap**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/10-finalizing-heightmap/) →
 
 ## *Large-Project Alternative Workflow*
 
-[**Step 9c: Merging Individual Raster Tiles**](/tutorial/09c-merging-raster/) →
+[**Step 9c: Merging Individual Raster Tiles**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/09c-merging-raster/) →
 

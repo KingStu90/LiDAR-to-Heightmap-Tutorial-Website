@@ -62,12 +62,12 @@
 
 ## Project Overview
 
-[**README**](/) ←
+[**README**](/LiDAR-to-Heightmap-Tutorial-Website/) ←
 
 ## Map Downloads & More Examples 
 
-[**Final Results**](/resources/01-downloads-and-more-examples/) →
+[**Final Results**](/LiDAR-to-Heightmap-Tutorial-Website/resources/01-downloads-and-more-examples/) →
 
 ## Citations and Attribution
 
-[**Sources**](/resources/03-citations-and-attribution/) →
+[**Sources**](/LiDAR-to-Heightmap-Tutorial-Website/resources/03-citations-and-attribution/) →

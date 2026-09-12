@@ -113,8 +113,8 @@ echo "Finished: $output_file"
 
 ## Previous Step
 
-[**Step 11: Creating the Basemap Raster**](/tutorial/11-creating-the-basemap-cloudcompare/)  ←
+[**Step 11: Creating the Basemap Raster**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/11-creating-the-basemap-cloudcompare/)  ←
 
 ## Next Step
 
-[**Step 13: Isolating Trees**](/tutorial/13-isolating-trees/) →
+[**Step 13: Isolating Trees**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/13-isolating-trees/) →

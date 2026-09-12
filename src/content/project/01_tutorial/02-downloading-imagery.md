@@ -15,7 +15,7 @@ For downloading imagery outside the U.S., I will only briefly cover the QGIS met
   <tr>
     <td align="center" width="50%">
       <strong>Downloaded through QGIS</strong><br>
-      <img src="/photos/02a_esri_basemap.webp" 
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/02a_esri_basemap.webp" 
       alt="ESRI imagery"
       width="80%"><br>
       <strong>Environmental Systems Research Institute (ESRI)</strong><br>
@@ -24,7 +24,7 @@ For downloading imagery outside the U.S., I will only briefly cover the QGIS met
     </td>
     <td align="center" width="50%">
       <strong>Downloaded through NOAA</strong><br>
-      <img src="/photos/02b_naip_basemap.webp" 
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/02b_naip_basemap.webp" 
       alt="NAIP imagery"
       width="80%"><br>
       <strong>National Agriculture Imagery Program (NAIP)</strong><br>
@@ -42,7 +42,7 @@ For downloading imagery outside the U.S., I will only briefly cover the QGIS met
 #### NOAA Download Method
 
 <div align="center">
-  <img src="/photos/02c_noaa_download.webp" 
+  <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/02c_noaa_download.webp" 
   alt="NOAA download page"
   style="max-width: 60%; height: auto;">
 </div>
@@ -59,7 +59,7 @@ For downloading imagery outside the U.S., I will only briefly cover the QGIS met
 >To find out which **Projection and Datum Options** to select, use `pdal info --summary` on the `.laz` file. The output will be a huge wall of text and may be overwhelming at first. Look for the **EPSG code** located here (**A**). Once you have the EPSG code, enter it into [**EPSG.io**](https://epsg.io/6424) to make the information easier to read. On the EPSG.io page, scroll down to **Export** and select the **ESRI WKT** tab.
 
 <div align="center">
-  <img src="/photos/02e_pdal_info.webp" 
+  <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/02e_pdal_info.webp" 
   alt="PDAL info - terminal output"
   style="max-width: 60%; height: auto;">
 </div>
@@ -84,7 +84,7 @@ docker run --rm \
 #### QGIS Download Method
 
 <div align="center">
-  <img src="/photos/02d_qgis_download.webp" 
+  <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/02d_qgis_download.webp" 
   alt="QGIS download page"
   style="max-width: 80%; height: auto;">
 </div>
@@ -103,8 +103,8 @@ docker run --rm \
 
 ## Previous Step
 
-[**Step 1: Downloading Point Cloud Data**](/tutorial/01-downloading-point-cloud-data/) ←
+[**Step 1: Downloading Point Cloud Data**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/01-downloading-point-cloud-data/) ←
 
 ## Next Step
 
-[**Step 3: Reprojecting Imagery**](/tutorial/03-reprojecting-imagery/) →
+[**Step 3: Reprojecting Imagery**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/03-reprojecting-imagery/) →

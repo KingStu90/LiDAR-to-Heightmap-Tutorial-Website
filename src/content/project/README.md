@@ -1,6 +1,6 @@
 # LiDAR-to-Heightmap Beginner Tutorial
 
-A beginner-friendly, reproducible workflow for turning **LiDAR data into heightmaps, basemaps, and tree placement maps for BeamNG.drive**. Additional **screenshots and download links** for maps can be found [**here**](/resources/01-downloads-and-more-examples/). 
+A beginner-friendly, reproducible workflow for turning **LiDAR data into heightmaps, basemaps, and tree placement maps for BeamNG.drive**. Additional **screenshots and download links** for maps can be found [**here**](/LiDAR-to-Heightmap-Tutorial-Website/resources/01-downloads-and-more-examples/). 
 
 <table>
   <thead>
@@ -11,31 +11,31 @@ A beginner-friendly, reproducible workflow for turning **LiDAR data into heightm
   <tbody>
     <tr>
       <td style="text-align: center; width: 50%;">
-        <img src="/photos/98_dirtfish_1.webp" alt="DirtFish Rally School, WA" style="width: 100%;">
+        <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/98_dirtfish_1.webp" alt="DirtFish Rally School, WA" style="width: 100%;">
         <br><em>DirtFish Rally School, WA</em>
       </td>
       <td style="text-align: center; width: 50%;">
-        <img src="/photos/99_swing_arm_city_1.webp" alt="Swing Arm City, UT" style="width: 100%;">
+        <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_swing_arm_city_1.webp" alt="Swing Arm City, UT" style="width: 100%;">
         <br><em>Swing Arm City, UT</em>
       </td>
     </tr>
     <tr>
       <td style="text-align: center; width: 50%;">
-        <img src="/photos/98_seattle_golf_club_1.webp" alt="Seattle Golf Club, WA" style="width: 100%;">
+        <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/98_seattle_golf_club_1.webp" alt="Seattle Golf Club, WA" style="width: 100%;">
         <br><em>Seattle Golf Club, WA</em>
       </td>
       <td style="text-align: center; width: 50%;">
-        <img src="/photos/99_crater_lake_1.webp" alt="Crater Lake, OR" style="width: 100%;">
+        <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_crater_lake_1.webp" alt="Crater Lake, OR" style="width: 100%;">
         <br><em>Crater Lake, OR</em>
       </td>
     </tr>
     <tr>
       <td style="text-align: center; width: 50%;">
-        <img src="/photos/99_eureka_dunes_scaled_1.webp" alt="Eureka Dunes, CA" style="width: 100%;">
+        <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_eureka_dunes_scaled_1.webp" alt="Eureka Dunes, CA" style="width: 100%;">
         <br><em>Eureka Dunes, CA</em>
       </td>
       <td style="text-align: center; width: 50%;">
-        <img src="/photos/98_old_dominion_university_1.webp" alt="Old Dominion University, VA" style="width: 100%;">
+        <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/98_old_dominion_university_1.webp" alt="Old Dominion University, VA" style="width: 100%;">
         <br><em>Old Dominion University, VA</em>
       </td>
     </tr>
@@ -54,12 +54,12 @@ Fast forward to this year: I made the switch to Linux, and BeamNG.drive is one o
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="/photos/00_ridge_motorsports_park_1.webp"  
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/00_ridge_motorsports_park_1.webp"  
       alt="Ridge Motorsports Park, WA — initial manual approach"
       width="100%">
     </td>
     <td align="center" width="50%">
-      <img src="/photos/00_ridge_motorsports_park_3.webp" 
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/00_ridge_motorsports_park_3.webp" 
       alt="Ridge Motorsports Park, WA — initial manual approach"
       width="100%">
     </td>
@@ -72,12 +72,12 @@ Fast forward to this year: I made the switch to Linux, and BeamNG.drive is one o
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="/photos/00_ridge_motorsports_park_5.webp" 
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/00_ridge_motorsports_park_5.webp" 
       alt="Final Results: Ridge Motorsports Park, WA"
       width="100%">
     </td>
     <td align="center" width="50%">
-      <img src="/photos/00_ridge_motorsports_park_6.webp" 
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/00_ridge_motorsports_park_6.webp" 
       alt="Final Results: Ridge Motorsports Park, WA"
       width="100%">
     </td>
@@ -93,17 +93,17 @@ Fast forward to this year: I made the switch to Linux, and BeamNG.drive is one o
 
 The part I found most frustrating was spending so much time **manually recreating things that were already present in LiDAR data**. Manually placing trees was especially time-consuming, and using roads as a method to smooth the terrain didn't seem like the ideal way to make a track that was accurate to real life, because it is very difficult to preserve the original camber and elevation when manually working on the terrain.
 
-Discovering the [**Biome Tool**](https://documentation.beamng.com/world_editor/tools/biome_tool/) in the World Editor was the **starting point for this project**. It allows you to place objects and vegetation based on a grayscale mask. After a lot of experimentation with different LiDAR processing software, **I developed a repeatable method for extracting tree locations from the LiDAR data and creating a tree placement map**  that could be used with the Biome Tool ([**detailed explanation**](/tutorial/13-isolating-trees/)). 
+Discovering the [**Biome Tool**](https://documentation.beamng.com/world_editor/tools/biome_tool/) in the World Editor was the **starting point for this project**. It allows you to place objects and vegetation based on a grayscale mask. After a lot of experimentation with different LiDAR processing software, **I developed a repeatable method for extracting tree locations from the LiDAR data and creating a tree placement map**  that could be used with the Biome Tool ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/13-isolating-trees/)). 
 
-**I also needed a way to reduce the force feedback noise in a way that didn't require manually smoothing the terrain.** My solution was to scale the LiDAR data to **50%** before generating the heightmap, and then bring the terrain back to its original scale in the BeamNG World Editor ([**detailed explanation**](/tutorial/08-scale-50/)).
+**I also needed a way to reduce the force feedback noise in a way that didn't require manually smoothing the terrain.** My solution was to scale the LiDAR data to **50%** before generating the heightmap, and then bring the terrain back to its original scale in the BeamNG World Editor ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/08-scale-50/)).
 
-**Finally, I wanted to eliminate the need to hand-paint the terrain**. The main problem I ran into when trying to use imagery like Google Maps for a basemap is that the imagery and heightmap become increasingly misaligned over a large area. **To solve this, I colorize the point cloud with the imagery and then create the basemap from the colorized point cloud** ([**detailed explanation**](/tutorial/11-creating-the-basemap-cloudcompare/)).
+**Finally, I wanted to eliminate the need to hand-paint the terrain**. The main problem I ran into when trying to use imagery like Google Maps for a basemap is that the imagery and heightmap become increasingly misaligned over a large area. **To solve this, I colorize the point cloud with the imagery and then create the basemap from the colorized point cloud** ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/11-creating-the-basemap-cloudcompare/)).
 
 One ***potential*** way this project could be expanded is by using **LiDAR data to place material layers** (*grass, dirt, asphalt, etc.*). I know that the World Editor can **export layer maps** for each material (*shown below*). I haven't figured out a way to import layer maps, but depending on the dataset it **can be possible to extract information from the LiDAR data that could be used to paint different materials**.
 
 <figure style="text-align: center; margin: auto;">
   <img
-    src="/photos/00_layermap_grass.webp"
+    src="/LiDAR-to-Heightmap-Tutorial-Website/photos/00_layermap_grass.webp"
     alt="Hand painted grass layer"
     style="max-width: 50%; height: auto;"
   >
@@ -119,7 +119,7 @@ One ***potential*** way this project could be expanded is by using **LiDAR data
 
 <div align="center">
   <img
-    src="/photos/00_workflow.svg"
+    src="/LiDAR-to-Heightmap-Tutorial-Website/photos/00_workflow.svg"
     alt="Workflow mermaid chart"
     style="max-width: 100%; height: auto;"
   >
@@ -193,19 +193,19 @@ The `run_pipeline.sh` script handles starting the Docker container and makes t
 
 ## Start Tutorial
 
-[**Step 1: Downloading LiDAR Data**](/tutorial/01-downloading-point-cloud-data/) →
+[**Step 1: Downloading LiDAR Data**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/01-downloading-point-cloud-data/) →
 
 ## Map Downloads & More Examples 
 
-[**Final Results**](/resources/01-downloads-and-more-examples/) →
+[**Final Results**](/LiDAR-to-Heightmap-Tutorial-Website/resources/01-downloads-and-more-examples/) →
 
 ## LiDAR Data and Other Resources
 
-[**Useful Resources**](/resources/02-lidar-data-and-other-resources/) →
+[**Useful Resources**](/LiDAR-to-Heightmap-Tutorial-Website/resources/02-lidar-data-and-other-resources/) →
 
 ## Citations and Attribution
 
-[**Sources**](/resources/03-citations-and-attribution/) →
+[**Sources**](/LiDAR-to-Heightmap-Tutorial-Website/resources/03-citations-and-attribution/) →
 
 ***
 

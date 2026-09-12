@@ -39,9 +39,9 @@ echo "Finished: heightmap_MERGED.tif"
 
 ## Previous Step
 
-[**Step 9b: Creating the Heightmap Raster**](/tutorial/09b-creating-the-heightmap/)  ←
+[**Step 9b: Creating the Heightmap Raster**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/09b-creating-the-heightmap/)  ←
 
 ## Next Step
 
-[**Step 10: Finalizing the Heightmap**](/tutorial/10-finalizing-heightmap/) →
+[**Step 10: Finalizing the Heightmap**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/10-finalizing-heightmap/) →
 

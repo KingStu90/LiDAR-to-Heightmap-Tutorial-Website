@@ -19,7 +19,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="/photos/03c_before_reprojection.webp" 
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/03c_before_reprojection.webp" 
       alt="Before reprojection"
       width="80%">
       <br>
@@ -27,7 +27,7 @@
       EPSG:2229
     </td>
     <td align="center">
-      <img src="/photos/03d_after_reprojection.webp" 
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/03d_after_reprojection.webp" 
       alt="After reprojection"
       width="80%">
       <br>
@@ -43,7 +43,7 @@
   </tr>
   <tr>
     <td align="center">
-      <img src="/photos/03a_before_reprojection.webp" 
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/03a_before_reprojection.webp" 
       alt="Visual representation only - before reprojection"
       width="80%">
       <br>
@@ -51,7 +51,7 @@
       EPSG:26910
     </td>
     <td align="center">
-      <img src="/photos/03b_after_reprojection.webp" 
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/03b_after_reprojection.webp" 
       alt="Visual representation only - after reprojection"
       width="80%">
       <br>
@@ -64,7 +64,7 @@
 ### Instructions
 
 <div align="center">
-  <img src="/photos/03e_gdalinfo.webp" 
+  <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/03e_gdalinfo.webp" 
   alt="GDAL info terminal output"
   style="max-width: 60%; height: auto;">
 </div>
@@ -129,8 +129,8 @@ echo "Finished: MERGED_REPROJECT.tif"
 
 ## Previous Step
 
-[**Step 2: Downloading Imagery**](/tutorial/02-downloading-imagery/)  ←
+[**Step 2: Downloading Imagery**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/02-downloading-imagery/)  ←
 
 ## Next Step
 
-[**Step 4: Colorizing Point Cloud**](/tutorial/04-colorizing-point-cloud/) →
+[**Step 4: Colorizing Point Cloud**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/04-colorizing-point-cloud/) →

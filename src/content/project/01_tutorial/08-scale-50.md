@@ -10,11 +10,11 @@ One of the **main issues** with my first track made from LiDAR data was that the
   </tr>
   <tr>
     <td width="50%" align="center">
-      <img src="/photos/08d_road_architect_bank.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/08d_road_architect_bank.webp"
       alt="Road architect tool - before">
     </td>
     <td width="50%" align="center">
-      <img src="/photos/08e_road_architect_bank.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/08e_road_architect_bank.webp"
       alt="Road architect tool - after">
     </td>
   </tr>
@@ -33,7 +33,7 @@ I wanted to find a way to **reduce the FFB noise** without having to manually pl
   </tr>
   <tr>
     <td align="center">
-      <img src="/photos/08a_100_scale.webp" 
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/08a_100_scale.webp" 
       alt="1:1 Scale CloudCompare - 1 meter per pixel BeamNG"
       width="70%">
     </td>
@@ -45,7 +45,7 @@ I wanted to find a way to **reduce the FFB noise** without having to manually pl
   </tr>
   <tr>
     <td align="center">
-      <img src="/photos/08b_50_scale.webp" 
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/08b_50_scale.webp" 
       alt="1:2 Scale CloudCompare - 2 meter per pixel BeamNG"
       width="70%">
     </td>
@@ -57,7 +57,7 @@ I wanted to find a way to **reduce the FFB noise** without having to manually pl
   </tr>
   <tr>
     <td align="center">
-      <img src="/photos/08c_25_scale.webp" 
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/08c_25_scale.webp" 
       alt="1:4 Scale CloudCompare - 4 meter per pixel BeamNG"
       width="70%">
     </td>
@@ -125,8 +125,8 @@ done
 
 ## Previous Step
 
-[**Step 7: Converting from Feet to Meters** (***if needed***)](/tutorial/07-ft-to-m/)  ←
+[**Step 7: Converting from Feet to Meters** (***if needed***)](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/07-ft-to-m/)  ←
 
 ## Next Step
 
-[**Step 9a: Merging Point Cloud**](/tutorial/09a-merging-point-cloud/) →
+[**Step 9a: Merging Point Cloud**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/09a-merging-point-cloud/) →

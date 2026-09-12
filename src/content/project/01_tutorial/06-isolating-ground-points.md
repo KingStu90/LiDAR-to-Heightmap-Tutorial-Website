@@ -7,7 +7,7 @@ In this step, we are **isolating the ground** from **non-ground points**. To do 
 <p style="text-align: center;"><strong>Example A</strong></p>
 
 <p align="center">
-  <img src="/photos/06a_csf_principle.webp"
+  <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/06a_csf_principle.webp"
   alt="CSF visualization"><br>
   <a href="https://ramm.bnu.edu.cn/researchers/wumingzhang/english/default_contributions.htm">Original Contribution by Wuming Zhang</a>
 </p>
@@ -20,14 +20,14 @@ In this step, we are **isolating the ground** from **non-ground points**. To do 
   </tr>
   <tr>
     <td width="50%" align="center">
-      <img src="/photos/06b_csf_ground.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/06b_csf_ground.webp"
       alt="Buttonwillow example - CSF ground output">
       <br>
       <strong>Buttonwillow</strong><br>
       Ground Points
     </td>
     <td width="50%" align="center">
-      <img src="/photos/06c_csf_offground.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/06c_csf_offground.webp"
       alt="Buttonwillow example - CSF non-ground output">
       <br>
       <strong>Buttonwillow</strong><br>
@@ -42,14 +42,14 @@ In this step, we are **isolating the ground** from **non-ground points**. To do 
   </tr>
   <tr>
     <td width="50%" align="center">
-      <img src="/photos/06e_csf_offground_yosemite.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/06e_csf_offground_yosemite.webp"
       alt="Yosemite example - CSF non-ground output">
       <br>
       <strong>Yosemite</strong><br>
       Non-Ground Points
     </td>
     <td width="50%" align="center">
-      <img src="/photos/06d_csf_offground_dunes.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/06d_csf_offground_dunes.webp"
       alt="Eureka Dunes example - CSF non-ground output">
       <br>
       <strong>Eureka Dunes</strong><br>
@@ -150,14 +150,14 @@ done
   
 ## Previous Step
 
-[**Step 5: Cleaning Point Cloud**](/tutorial/05-cleaning-point-cloud/)  ←
+[**Step 5: Cleaning Point Cloud**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/05-cleaning-point-cloud/)  ←
 
 ## Next Step
 
-[**Step 7: Converting from Feet to Meters** (***if needed***)](/tutorial/07-ft-to-m/) →
+[**Step 7: Converting from Feet to Meters** (***if needed***)](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/07-ft-to-m/) →
 
 ## *Dataset Already in Meters?*
 
-[**Step 8: Scale Point Cloud to 50%**](/tutorial/08-scale-50/) →
+[**Step 8: Scale Point Cloud to 50%**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/08-scale-50/) →
 
 

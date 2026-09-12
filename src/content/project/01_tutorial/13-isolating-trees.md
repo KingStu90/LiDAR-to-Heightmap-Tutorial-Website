@@ -11,7 +11,7 @@
 The filtering process **removes most of the points from the original tile**, so the **remaining points might occupy only a small portion of the original extent** (*as shown with Buttonwillow*). When the raster is created from only the filtered points, the **resulting raster is smaller than the original tile**. With this new method the **original tile extent is preserved** during the rasterization process **so the same crop coordinates can be used** later to keep the tree placement map aligned with the heightmap and basemap.
 
 <div align="center">
-  <img src="/photos/13e_trees.webp" 
+  <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/13e_trees.webp" 
   alt="Simple drawing of tree filtering concept"
   style="max-width: 60%; height: auto;">
 </div>
@@ -22,14 +22,14 @@ The filtering process **removes most of the points from the original tile**, so 
   <table style="width: 100%; table-layout: fixed; border-collapse: collapse;">
     <tr>
       <td align="center" style="width: 33.33%; vertical-align: top; padding: 8px;">
-        <img src="/photos/13a_buttonwillow.webp" 
+        <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/13a_buttonwillow.webp" 
         alt="Buttonwillow tree filter over basemap"
         style="width: 100%; height: auto;">
         <br>
         <strong>Buttonwillow Raceway Park</strong>
       </td>
       <td align="center" style="width: 33.33%; vertical-align: top; padding: 8px;">
-        <img src="/photos/13b_ridge.webp" 
+        <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/13b_ridge.webp" 
         alt="Ridge Motorsports Park tree filter over basemap"
         style="width: 100%; height: auto;">
         <br>
@@ -37,7 +37,7 @@ The filtering process **removes most of the points from the original tile**, so 
         <em>(Out of Date Imagery)</em>
       </td>
       <td align="center" style="width: 33.33%; vertical-align: top; padding: 8px;">
-        <img src="/photos/13c_yosemite.webp" 
+        <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/13c_yosemite.webp" 
         alt="El Capitan tree filter over basemap"
         style="width: 100%; height: auto;">
         <br>
@@ -57,7 +57,7 @@ The filtering process **removes most of the points from the original tile**, so 
 #### 13a_pipeline_trees_filter.json
 
 <div align="center">
-  <img src="/photos/13d_pdal_pipeline.webp" 
+  <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/13d_pdal_pipeline.webp" 
   alt="PDAL pipeline settings"
   style="max-width: 50%; height: auto;">
 </div>
@@ -179,8 +179,8 @@ echo "Finished: trees_MERGED.tif"
 
 ## Previous Step
 
-[**Step 12: Finalizing the Basemap**](/tutorial/12-finalizing-basemap/)  ←
+[**Step 12: Finalizing the Basemap**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/12-finalizing-basemap/)  ←
 
 ## Next Step
 
-[**Step 14: Finalizing the Tree Placement Map**](/tutorial/14-finalizing-tree-placement-map/) →
+[**Step 14: Finalizing the Tree Placement Map**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/14-finalizing-tree-placement-map/) →

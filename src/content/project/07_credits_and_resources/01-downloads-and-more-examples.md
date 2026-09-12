@@ -42,7 +42,7 @@ The **modified versions** are located under `mapname` > `terrain` > `materialnam
 
 <div align="center">
   <h3>BeamNG.drive In-Game Settings</h3>
-  <img src="/photos/19_beamng_import_settings.webp" 
+  <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/19_beamng_import_settings.webp" 
   alt="BeamNG import settings"
   style="max-width: 100%; height: auto;">
 </div>
@@ -64,17 +64,17 @@ Map size: 8192 x 8192
 <table>
   <tr>
     <td colspan="2" align="center">
-      <img src="/photos/99_swing_arm_city_1.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_swing_arm_city_1.webp"
       alt="Swing Arm City in-game screenshot">
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="/photos/99_swing_arm_city_2.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_swing_arm_city_2.webp"
       alt="Swing Arm City in-game screenshot">
     </td>
     <td align="center">
-      <img src="/photos/99_swing_arm_city_kb.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_swing_arm_city_kb.webp"
       alt="Swing Arm City in-game screenshot">
     </td>
   </tr>
@@ -99,11 +99,11 @@ Map size: 8192 x 8192
 <table>
   <tr>
     <td>
-      <img src="/photos/99_eureka_dunes_1.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_eureka_dunes_1.webp"
       alt="Eureka Dunes in-game screenshot">
     </td>
     <td>
-      <img src="/photos/99_eureka_dunes_2.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_eureka_dunes_2.webp"
       alt="Eureka Dunes in-game screenshot">
     </td>
   </tr>
@@ -129,11 +129,11 @@ Map size: 4096 x 4096
 <table>
   <tr>
     <td>
-      <img src="/photos/99_eureka_dunes_scaled_1.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_eureka_dunes_scaled_1.webp"
       alt="Eureka Dunes 1:4 scale in-game screenshot">
     </td>
     <td>
-      <img src="/photos/99_eureka_dunes_scaled_2.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_eureka_dunes_scaled_2.webp"
       alt="Eureka Dunes 1:4 scale in-game screenshot">
     </td>
   </tr>
@@ -156,11 +156,11 @@ Map size: 8192 x 8192
 <table>
   <tr>
     <td>
-      <img src="/photos/99_crater_lake_1.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_crater_lake_1.webp"
       alt="Crater Lake in-game screenshot">
     </td>
     <td>
-      <img src="/photos/99_crater_lake_2.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_crater_lake_2.webp"
       alt="Crater Lake in-game screenshot">
     </td>
   </tr>
@@ -183,11 +183,11 @@ Map size: 4096 x 4096
 <table>
   <tr>
     <td>
-      <img src="/photos/99_el_capitan_ca_1.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_el_capitan_ca_1.webp"
       alt="El Capitan in-game screenshot">
     </td>
     <td>
-      <img src="/photos/99_el_capitan_ca_2.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_el_capitan_ca_2.webp"
       alt="El Capitan in-game screenshot">
     </td>
   </tr>
@@ -210,11 +210,11 @@ Map size: 4096 x 4096
 <table>
   <tr>
     <td>
-      <img src="/photos/99_ridge_motorsports_park_2.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_ridge_motorsports_park_2.webp"
       alt="Ridge Motorsports Park in-game screenshot">
     </td>
     <td>
-      <img src="/photos/99_ridge_motorsports_park_4.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_ridge_motorsports_park_4.webp"
       alt="Ridge Motorsports Park in-game screenshot">
     </td>
   </tr>
@@ -236,11 +236,11 @@ Map size: 4096 x 4096
 <table>
   <tr>
     <td>
-      <img src="/photos/98_dirtfish_1.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/98_dirtfish_1.webp"
       alt="DirtFish in-game screenshot">
     </td>
     <td>
-      <img src="/photos/98_dirtfish_2.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/98_dirtfish_2.webp"
       alt="DirtFish in-game screenshot">
     </td>
   </tr>
@@ -259,11 +259,11 @@ Map size: 1024 x 1024
 <table>
   <tr>
     <td>
-      <img src="/photos/98_old_dominion_university_1.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/98_old_dominion_university_1.webp"
       alt="Old Dominion University in-game screenshot">
     </td>
     <td>
-      <img src="/photos/98_old_dominion_university_2.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/98_old_dominion_university_2.webp"
       alt="Old Dominion University in-game screenshot">
     </td>
   </tr>
@@ -280,11 +280,11 @@ Map size: 2048 x 2048
 <table>
   <tr>
     <td>
-      <img src="/photos/98_seattle_golf_club_1.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/98_seattle_golf_club_1.webp"
       alt="Seattle Golf Club in-game screenshot">
     </td>
     <td>
-      <img src="/photos/98_seattle_golf_club_2.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/98_seattle_golf_club_2.webp"
       alt="Seattle Golf Club in-game screenshot">
     </td>
   </tr>
@@ -301,17 +301,17 @@ Map size: 4096 x 4096
 <table>
   <tr>
     <td colspan="2" align="center">
-      <img src="/photos/98_tail_of_the_dragon_1.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/98_tail_of_the_dragon_1.webp"
       alt="Tail of the Dragon OSM in-game screenshot">
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="/photos/98_tail_of_the_dragon_2.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/98_tail_of_the_dragon_2.webp"
       alt="Tail of the Dragon in-game screenshot">
     </td>
     <td align="center">
-      <img src="/photos/98_tail_of_the_dragon_3.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/98_tail_of_the_dragon_3.webp"
       alt="Tail of the Dragon in-game screenshot">
     </td>
   </tr>
@@ -328,7 +328,7 @@ Map size: 4096 x 4096
 Map size: 2048 x 2048 
 
 <div align="center">
-  <img src="/photos/98_diamond_head.webp"
+  <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/98_diamond_head.webp"
   alt="Diamond Head in-game screenshot">
   <br>
 </div>
@@ -339,13 +339,13 @@ Map size: 2048 x 2048
 
 ## Project Overview
 
-[**README**](/) ←
+[**README**](/LiDAR-to-Heightmap-Tutorial-Website/) ←
 
 ## LiDAR Data and Other Resources
 
-[**Useful Resources**](/resources/02-lidar-data-and-other-resources/) →
+[**Useful Resources**](/LiDAR-to-Heightmap-Tutorial-Website/resources/02-lidar-data-and-other-resources/) →
 
 ## Citations and Attribution
 
-[**Sources**](/resources/03-citations-and-attribution/) →
+[**Sources**](/LiDAR-to-Heightmap-Tutorial-Website/resources/03-citations-and-attribution/) →
 

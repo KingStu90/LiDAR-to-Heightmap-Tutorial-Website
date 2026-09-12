@@ -4,20 +4,20 @@
 
 Provided with this project is a `downloadlist.txt` file from the [**U.S. Geological Survey LidarExplorer (USGS)**](https://apps.nationalmap.gov/lidar-explorer/#/). It contains the download links for **9 point cloud tiles** covering **Buttonwillow Raceway Park in California**.
 
-While the USGS covers much of the United States, **additional LiDAR datasets** may be available through the individual states' LiDAR [**portals**](/resources/02-lidar-data-and-other-resources/).
+While the USGS covers much of the United States, **additional LiDAR datasets** may be available through the individual states' LiDAR [**portals**](/LiDAR-to-Heightmap-Tutorial-Website/resources/02-lidar-data-and-other-resources/).
 
 ### Instructions
 
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="/photos/01a_usgs_download.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/01a_usgs_download.webp"
       alt="USGS download page">      
       <br>
       <strong>USGS LiDAR Explorer</strong>
     </td>
     <td width="50%" align="center">
-      <img src="/photos/01b_folder_structure.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/01b_folder_structure.webp"
       alt="Folder structure layout">
       <br>
       <strong>Project Directory Structure</strong>
@@ -26,7 +26,7 @@ While the USGS covers much of the United States, **additional LiDAR datasets** m
 </table>
 
 >[!TIP]
->**First project recommendation:** The [**Netherlands**](/resources/02-lidar-data-and-other-resources/) provides relatively consistent LiDAR datasets, and the datasets I used already had color information included in the point cloud. Imagery is also available through Web Map Services (WMS) in multiple coordinate reference systems (CRS), making it easy to get imagery for coloring point clouds.
+>**First project recommendation:** The [**Netherlands**](/LiDAR-to-Heightmap-Tutorial-Website/resources/02-lidar-data-and-other-resources/) provides relatively consistent LiDAR datasets, and the datasets I used already had color information included in the point cloud. Imagery is also available through Web Map Services (WMS) in multiple coordinate reference systems (CRS), making it easy to get imagery for coloring point clouds.
 
 **A)** Download the `downloadlist.txt` file from **USGS LidarExplorer**.
 
@@ -79,12 +79,12 @@ docker run --rm \
 
 ## Next Step
 
-[**Step 2: Downloading Satellite Imagery**](/tutorial/02-downloading-imagery/) →
+[**Step 2: Downloading Satellite Imagery**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/02-downloading-imagery/) →
 
 ## *Skip Colorization Process*
 
-[**Step 5: Cleaning Point Cloud**](/tutorial/05-cleaning-point-cloud/) →
+[**Step 5: Cleaning Point Cloud**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/05-cleaning-point-cloud/) →
 
 ## Project Overview
 
-[**README**](/) ←
+[**README**](/LiDAR-to-Heightmap-Tutorial-Website/) ←

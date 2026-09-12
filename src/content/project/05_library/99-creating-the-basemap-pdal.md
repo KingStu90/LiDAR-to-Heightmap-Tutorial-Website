@@ -35,7 +35,7 @@ The **PDAL pipeline** below defines **how the point cloud is rasterized**. The
 **PDAL Pipeline**
 
 <div align="center">
-  <img src="/photos/99_pdal_pipeline_idw.webp" 
+  <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_pdal_pipeline_idw.webp" 
   alt="PDAL Pipeline Rasterize json"
   style="max-width: 60%; height: auto;">
 </div>
@@ -173,8 +173,8 @@ echo "Finished: basemap_MERGED.tif"
 
 ## Previous Step
 
-[**Step 10: Finalizing the Heightmap**](/tutorial/10-finalizing-heightmap/)  ←
+[**Step 10: Finalizing the Heightmap**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/10-finalizing-heightmap/)  ←
 
 ## Next Step
 
-[**Step 12: Finalizing the Basemap**](/tutorial/12-finalizing-basemap/) →
+[**Step 12: Finalizing the Basemap**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/12-finalizing-basemap/) →

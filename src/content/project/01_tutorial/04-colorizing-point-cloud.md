@@ -9,13 +9,13 @@
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="/photos/04a_before_colorization.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/04a_before_colorization.webp"
       alt="Before colorization">
       <br>
       <strong>Original Point Cloud</strong>
     </td>
     <td width="50%" align="center">
-      <img src="/photos/04b_after_colorization.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/04b_after_colorization.webp"
       alt="After colorization">
       <br>
       <strong>Colored Point Cloud</strong>
@@ -73,8 +73,8 @@ done
   
 ## Previous Step
 
-[**Step 3: Reprojecting Imagery**](/tutorial/03-reprojecting-imagery/)  ←
+[**Step 3: Reprojecting Imagery**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/03-reprojecting-imagery/)  ←
 
 ## Next Step
 
-[**Step 5: Cleaning Point Cloud**](/tutorial/05-cleaning-point-cloud/) →
+[**Step 5: Cleaning Point Cloud**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/05-cleaning-point-cloud/) →

@@ -8,21 +8,21 @@ This step uses the color applied to the point cloud in Step 4 to **create the 
 
 This is a good example of why this tutorial is **not intended to demonstrate the one and only way to process LiDAR data**. There are many different tools and methods that can be used to accomplish the same task, and some approaches may work better than others depending on the dataset.
 
-I am including the PDAL method [**here**](/library/99-creating-the-basemap-pdal/) as a backup option.
+I am including the PDAL method [**here**](/LiDAR-to-Heightmap-Tutorial-Website/library/99-creating-the-basemap-pdal/) as a backup option.
 
 As shown in the photos below, **PDAL IDW** interpolation **is not able to fill in the data where there are no points**, whereas CloudCompare **Kriging is able to fill in those areas with similar colors**.
 
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="/photos/11a_pdal_raster.webp" 
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/11a_pdal_raster.webp" 
       alt="PDAL IDW interpolation"
       width="80%">
       <br>
       <strong>PDAL IDW</strong>
     </td>
     <td width="50%" align="center">
-      <img src="/photos/11b_cloudcompare_raster.webp" 
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/11b_cloudcompare_raster.webp" 
       alt="CloudCompare Kriging interpolation"
       width="80%">
       <br>
@@ -119,8 +119,8 @@ echo "Finished: basemap_MERGED.tif"
 
 ## Previous Step
 
-[**Step 10: Finalizing the Heightmap**](/tutorial/10-finalizing-heightmap/)  ←
+[**Step 10: Finalizing the Heightmap**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/10-finalizing-heightmap/)  ←
 
 ## Next Step
 
-[**Step 12: Finalizing the Basemap**](/tutorial/12-finalizing-basemap/) →
+[**Step 12: Finalizing the Basemap**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/12-finalizing-basemap/) →

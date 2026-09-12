@@ -86,12 +86,12 @@ United States Department of Agriculture, Farm Production and Conservation Busine
 
 ## Project Overview
 
-[**README**](/) ←
+[**README**](/LiDAR-to-Heightmap-Tutorial-Website/) ←
 
 ## Map Downloads & More Examples 
 
-[**Final Results**](/resources/01-downloads-and-more-examples/) →
+[**Final Results**](/LiDAR-to-Heightmap-Tutorial-Website/resources/01-downloads-and-more-examples/) →
 
 ## LiDAR Data and Other Resources
 
-[**Useful Resources**](/resources/02-lidar-data-and-other-resources/) →
+[**Useful Resources**](/LiDAR-to-Heightmap-Tutorial-Website/resources/02-lidar-data-and-other-resources/) →

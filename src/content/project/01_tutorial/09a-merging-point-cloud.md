@@ -16,7 +16,7 @@ Step 10: Finalizing the Heightmap
 
 **B)** **Large-Project Alternative Workflow**
 
-This **alternative workflow** is for projects where the merged point cloud is **too large to process all at once. Skip to** [**Step 9b**](/tutorial/09b-creating-the-heightmap/), if you are following this workflow.
+This **alternative workflow** is for projects where the merged point cloud is **too large to process all at once. Skip to** [**Step 9b**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/09b-creating-the-heightmap/), if you are following this workflow.
 
 ```text
 Step 9b: Creating the Heightmap Raster
@@ -49,8 +49,8 @@ echo "Finished: heightmap_MERGED.laz"
 
 ## Previous Step
 
-[**Step 8: Scaling Point Cloud to 50%**](/tutorial/08-scale-50/)  ←
+[**Step 8: Scaling Point Cloud to 50%**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/08-scale-50/)  ←
 
 ## Next Step
 
-[**Step 9b: Creating the Heightmap Raster**](/tutorial/09b-creating-the-heightmap/) →
+[**Step 9b: Creating the Heightmap Raster**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/09b-creating-the-heightmap/) →

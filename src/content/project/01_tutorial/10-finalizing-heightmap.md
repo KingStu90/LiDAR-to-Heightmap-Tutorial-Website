@@ -29,7 +29,7 @@ docker run --rm \
 `Color > Auto > Stretch Contrast`
 
 <div style="text-align: center;">
-  <img src="/photos/10a_crop_extent_gimp.webp" 
+  <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/10a_crop_extent_gimp.webp" 
   alt="GIMP rectangle tool - X and Y coordinate position instruction"
   style="max-width: 60%; height: auto;"><br>
   <em>X and Y define the starting position of the crop, measured from the upper-left corner of the image and 1024x1024 is the map size</em>
@@ -65,7 +65,7 @@ echo "Finished: $output_file"
 ***QGIS Method***
 
 <div style="text-align: center;">
-  <img src="/photos/10b_convert_16bit_qgis.webp" 
+  <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/10b_convert_16bit_qgis.webp" 
   alt="QGIS - minimum and maximum height"
   style="max-width: 60%; height: auto;"><br>
   <em>Note: QGIS may display slightly different min/max values than gdalinfo -mm</em>
@@ -146,8 +146,8 @@ echo "Finished: $output_file"
 
 ## Previous Step
 
-[**Step 9b: Creating the Heightmap Raster**](/tutorial/09b-creating-the-heightmap/)  ←
+[**Step 9b: Creating the Heightmap Raster**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/09b-creating-the-heightmap/)  ←
 
 ## Next Step
 
-[**Step 11: Creating the Basemap Raster**](/tutorial/11-creating-the-basemap-cloudcompare/) →
+[**Step 11: Creating the Basemap Raster**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/11-creating-the-basemap-cloudcompare/) →

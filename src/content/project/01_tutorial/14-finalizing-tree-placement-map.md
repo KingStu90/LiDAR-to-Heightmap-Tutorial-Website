@@ -107,16 +107,16 @@ echo "Finished: $output_file"
 
 ## Previous Step:
 
-[**Step 13: Isolating Trees**](/tutorial/13-isolating-trees/)  ←
+[**Step 13: Isolating Trees**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/13-isolating-trees/)  ←
 
 ## Map Downloads & More Examples 
 
-[**Final Results**](/resources/01-downloads-and-more-examples/) →
+[**Final Results**](/LiDAR-to-Heightmap-Tutorial-Website/resources/01-downloads-and-more-examples/) →
 
 ## Citations and Attribution
 
-[**Sources**](/resources/03-citations-and-attribution/) →
+[**Sources**](/LiDAR-to-Heightmap-Tutorial-Website/resources/03-citations-and-attribution/) →
 
 ## LiDAR Data and Other Resources
 
-[**Useful Resources**](/resources/02-lidar-data-and-other-resources/) →
+[**Useful Resources**](/LiDAR-to-Heightmap-Tutorial-Website/resources/02-lidar-data-and-other-resources/) →

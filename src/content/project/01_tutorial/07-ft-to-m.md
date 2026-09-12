@@ -53,8 +53,8 @@ done
 
 ## Previous Step
 
-[**Step 6: Isolating Ground Points**](/tutorial/06-isolating-ground-points/)  ←
+[**Step 6: Isolating Ground Points**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/06-isolating-ground-points/)  ←
 
 ## Next Step
 
-[**Step 8: Scaling Point Cloud to 50%**](/tutorial/08-scale-50/) →
+[**Step 8: Scaling Point Cloud to 50%**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/08-scale-50/) →

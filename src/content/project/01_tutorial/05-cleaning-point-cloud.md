@@ -21,13 +21,13 @@ The **important takeaway** is that for smaller projects, you can generally do mo
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="/photos/05a_before_sor.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/05a_before_sor.webp"
       alt="Before SOR filter">
       <br>
       <strong>Before SOR Filter</strong>
     </td>
     <td width="50%" align="center">
-      <img src="/photos/05b_after_sor.webp"
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/05b_after_sor.webp"
       alt="After SOR filter">
       <br>
       <strong>After SOR Filter</strong>
@@ -93,8 +93,8 @@ done
 
 ## Previous Step
 
-[**Step 4: Colorizing Point Cloud**](/tutorial/04-colorizing-point-cloud/) ←
+[**Step 4: Colorizing Point Cloud**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/04-colorizing-point-cloud/) ←
 
 ## Next Step
 
-[**Step 6: Isolating Ground Points**](/tutorial/06-isolating-ground-points/) →
+[**Step 6: Isolating Ground Points**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/06-isolating-ground-points/) →
