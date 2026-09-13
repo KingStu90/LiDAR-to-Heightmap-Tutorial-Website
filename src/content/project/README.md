@@ -1,4 +1,4 @@
-# LiDAR-to-Heightmap Beginner Tutorial
+## LiDAR-to-Heightmap Beginner Tutorial
 
 ***
 
@@ -54,7 +54,7 @@ The complete project files, scripts, and example data used in this tutorial 
 
 ***
 
-## Who This Is For
+### Who This Is For
 
 **I did my best to write this tutorial for the person I was when I started**. Because of this, the tutorial is fairly in-depth. There are a lot of tutorials about Geographic Information Systems (GIS) and processing LiDAR data, **but it can be difficult to know what to search for when you don't know the basic terminology**. 
 
@@ -62,7 +62,7 @@ My goal with this tutorial is to **provide a reproducible workflow** while intro
 
 ***
 
-## What This Tutorial Does
+### What This Tutorial Does
 
 The part I found most frustrating was spending so much time **manually recreating things that were already contained in the LiDAR data**. Manually placing trees was especially time-consuming, and using roads as a method to smooth the terrain didn't seem like the ideal way to create a track that was accurate to real life. It is very difficult to preserve the original camber and elevation when manually modifying the terrain.
 
@@ -100,7 +100,7 @@ One ***potential*** way this project could be expanded is by using **LiDAR data 
 
 ***
 
-## Requirements
+### Requirements
 
 >[!IMPORTANT]
 >All of the steps in the tutorial provide a “**Native Execution**” command which **requires the user to have the program used by that step installed on their PC**.
@@ -157,7 +157,7 @@ Individual processing scripts can then be run through Docker:
 
 ***
 
-## Why I Made This
+### Why I Made This
 
 I originally got interested in making **a track from LiDAR data** a couple of years ago after coming across this [**tutorial**](https://assettocorsamods.net/threads/track-building-series.1796/) for Assetto Corsa. Following the tutorial, I managed to get some roads imported into the simulator. However, **the majority of the actual map creation was done in Blender**, and I didn't have the time or motivation to learn Blender just to drive around a local track.
 
@@ -206,27 +206,27 @@ Fast forward to this year: I made the switch to Linux, and BeamNG.drive is one o
 
 ***
 
-## Start Tutorial
+### Start Tutorial
 
 [**Step 1: Downloading LiDAR Data**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/01-downloading-point-cloud-data/) →
 
 ***
 
-## Map Downloads & More Examples 
+### Map Downloads & More Examples 
 
 [**Final Results**](/LiDAR-to-Heightmap-Tutorial-Website/resources/01-downloads-and-more-examples/) →
 
-## LiDAR Data and Other Resources
+### LiDAR Data and Other Resources
 
 [**Useful Resources**](/LiDAR-to-Heightmap-Tutorial-Website/resources/02-lidar-data-and-other-resources/) →
 
-## Citations and Attribution
+### Citations and Attribution
 
 [**Sources**](/LiDAR-to-Heightmap-Tutorial-Website/resources/03-citations-and-attribution/) →
 
 ***
 
-## About Me
+### About Me
 
 I enjoy building things, figuring out how they work, and finding ways to solve problems with the tools and information available.
 
@@ -238,7 +238,7 @@ My interest in LiDAR also connects with my interest in drones. I originally got 
 
 ***
 
-## Feedback & Support
+### Feedback & Support
 
 If you find an issue with the tutorial, have a question, or have feedback on the workflow, I'd be happy to hear from you at <b>kingstuart75@gmail.com</b>.
 
