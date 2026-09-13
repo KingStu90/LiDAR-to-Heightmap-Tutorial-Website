@@ -140,14 +140,12 @@ Fast forward to this year: I made the switch to Linux, and BeamNG.drive is one o
   </tr>
 </table>
 
-## Software Prerequisites 
+## Requirements
 
 >[!IMPORTANT]
 >All of the steps in the tutorial provide a “**Native Execution**” command which **requires the user to have the program used by that step installed on their PC**.
 >
 >There is also a “**Docker Execution**” command which requires **Docker**. The advantage of using Docker is that all the programs and their dependencies are installed in a self-contained environment, **so you don’t have to install and configure each program separately**.
-
-## Requirements
 
 ### Native Execution
 
