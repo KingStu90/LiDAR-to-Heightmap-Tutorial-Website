@@ -169,7 +169,7 @@ The native workflow requires the software used by each step to be installed on y
 
 *Depending on your operating system and what dependencies are installed, you may need to do some troubleshooting to get all the programs working correctly*.
 
-#### Docker Execution
+### Docker Execution
 
 The repository also includes a Docker workflow that packages the required processing environment into a container.
 
@@ -224,7 +224,7 @@ My interest in LiDAR also connects with my interest in drones. I originally got 
 
 *Disclaimer: This project has been a great experience in **learning to write and understand code**. The majority of the scripts were written using the free ChatGPT model. **However, it took considerable planning, modifying, and testing to get this tutorial to work with multiple workflows**. I have purposely kept the "Native Execution" commands as simple as possible to help other non-technical users understand what the script is accomplishing*.
 
-### Feedback & Support
+## Feedback & Support
 
 If you find an issue with the tutorial, have a question, or have feedback on the workflow, I'd be happy to hear from you at <b>kingstuart75@gmail.com</b>.
 
