@@ -81,5 +81,3 @@
 ## Citations and Attribution
 
 [**Sources**](/LiDAR-to-Heightmap-Tutorial-Website/resources/03-citations-and-attribution/) →
-
-***
