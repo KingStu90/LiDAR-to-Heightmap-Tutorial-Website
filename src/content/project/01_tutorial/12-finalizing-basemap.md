@@ -117,4 +117,4 @@ echo "Finished: $output_file"
 
 ## Next Step
 
-[**Step 13: Isolating Trees**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/13-isolating-trees/) →
+[**Step 13: Creating the Tree Placement Map**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/13-isolating-trees/) →
