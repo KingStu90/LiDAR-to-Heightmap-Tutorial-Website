@@ -10,7 +10,7 @@ While the USGS covers much of the United States, **additional LiDAR datasets** m
 
 >[!TIP]
 >*First project recommendation:* The [**Netherlands**](/LiDAR-to-Heightmap-Tutorial-Website/resources/02-lidar-data-and-other-resources/) provides relatively consistent LiDAR datasets, and the datasets I used already had color information included in the point cloud.<br> 
->Imagery is also available through Web Map Services (WMS) in multiple coordinate reference systems (CRS), making it easy to get imagery for coloring point clouds.
+>Imagery is also available through Web Map Services (WMS) in multiple coordinate reference systems (CRS), making it easy to color point clouds.
 
 ***
 
