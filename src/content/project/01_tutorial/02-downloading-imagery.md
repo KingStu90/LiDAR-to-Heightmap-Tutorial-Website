@@ -60,7 +60,7 @@ For downloading imagery outside the U.S., I will only briefly cover the QGIS met
 **D)** Click the **Cart** on left sidebar to **Checkout** (*Requires email address to receive download link*).
 
 >[!NOTE]
->To find out which **Projection and Datum Options** to select, use `pdal info --summary` on the `.laz` file. Look for the **EPSG code** located here (**A**).<br>
+>To find out which **Projection and Datum Options** to select, use `pdal info --summary` on the `.laz` file. Look for the **EPSG code** located here (*A*).<br>
 >Once you have the EPSG code, enter it into [**EPSG.io**](https://epsg.io/6424) to make the information easier to read. On the EPSG.io page, scroll down to **Export** and select the **ESRI WKT** tab.
 
 <div align="center">
