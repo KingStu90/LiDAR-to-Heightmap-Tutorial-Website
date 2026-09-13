@@ -4,6 +4,8 @@
 
 ### Downloadable Maps - Data Sources
 
+***
+
 #### 1) Buttonwillow Raceway Park - California
 
 **LiDAR Data**
@@ -67,6 +69,8 @@ U.S. Geological Survey, USGS NAIP Imagery, accessed July 28, 2026 at URL [**http
 ***
 
 ### Screenshots - Data Sources
+
+***
 
 #### 1) King County Aerial Imagery
 
