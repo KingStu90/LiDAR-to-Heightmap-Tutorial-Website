@@ -12,7 +12,7 @@ const { title = "LiDAR to Heightmap Tutorial" } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
   </head>
 
@@ -280,7 +280,7 @@ const { title = "LiDAR to Heightmap Tutorial" } = Astro.props;
     z-index: 1000;
     align-items: center;
     justify-content: center;
-    padding: 40px;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.85);
   }
 
@@ -289,8 +289,9 @@ const { title = "LiDAR to Heightmap Tutorial" } = Astro.props;
   }
 
   .lightbox-image {
-    max-width: 90vw;
-    max-height: 90vh;
+    display: block;
+    max-width: calc(100vw - 40px);
+    max-height: calc(100vh - 40px);
     width: auto;
     height: auto;
     object-fit: contain;
@@ -306,6 +307,7 @@ const { title = "LiDAR to Heightmap Tutorial" } = Astro.props;
     border-radius: 6px;
     width: 50px;
     height: 50px;
+    z-index: 1001;
   }
 
   .lightbox button:hover {
@@ -330,18 +332,34 @@ const { title = "LiDAR to Heightmap Tutorial" } = Astro.props;
   }
 
   @media (max-width: 800px) {
-    .page {
-      margin-left: 0;
-    }
-
-    main {
-      padding: 40px 24px 80px;
-    }
-    
-    footer {
-      padding: 24px;
-    }
+  .lightbox {
+    padding: 10px;
   }
+
+  .lightbox-image {
+    max-width: calc(100vw - 20px);
+    max-height: calc(100vh - 20px);
+  }
+
+  .lightbox button {
+    width: 44px;
+    height: 44px;
+    font-size: 1.6rem;
+  }
+
+  .lightbox-close {
+    top: 10px;
+    right: 10px;
+  }
+
+  .lightbox-prev {
+    left: 10px;
+  }
+
+  .lightbox-next {
+    right: 10px;
+  }
+}
 </style>
 
 <script>
