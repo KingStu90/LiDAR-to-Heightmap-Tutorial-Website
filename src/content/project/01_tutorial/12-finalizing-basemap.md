@@ -18,13 +18,13 @@
 
 - For this step we will need the original dimensions of `heightmap_MERGED.tif` from **Step 10**.
 
--  If the point cloud has been scaled to 50% the basemap dimensions need to be scaled to 2x.
-
 ```text
 heightmap_MERGED.tif = 1144 x 1144
                             ↓ ×2
 basemap_MERGED.tif    = 2288 x 2288
 ```
+
+-  If the point cloud has been scaled to 50% the basemap dimensions need to be scaled to 2x.
 
 ```bash
 #!/bin/bash
