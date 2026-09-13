@@ -14,8 +14,6 @@ This method produces the **same type of basemap** used in the main workflow, so 
 
 ### Instructions
 
-***
-
 #### 1) Check RGB Values
 
 ```bash
@@ -138,8 +136,6 @@ xargs -0 -I {} -P 4 bash -c '
 
 #### 3) Merging RGB Basemap Layers
 
-***
-
 **Native Execution**
 
 The only setting ***you may*** have to change is `ot Byte`, the rest of the settings are ***recommended*** and ***should not*** normally need to be changed.
@@ -204,5 +200,3 @@ echo "Finished: basemap_MERGED.tif"
 ## Next Step
 
 [**Step 12: Finalizing the Basemap**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/12-finalizing-basemap/) →
-
-***
