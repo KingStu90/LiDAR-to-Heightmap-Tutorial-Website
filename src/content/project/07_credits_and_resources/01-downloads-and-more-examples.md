@@ -55,8 +55,6 @@ The **modified versions** are located under `mapname` > `terrain` > `materialnam
 
 ## Downloadable Maps
 
-***
-
 ### Swing Arm City, Utah
 
 Map size: 8192 x 8192 
@@ -266,6 +264,3 @@ Map size: 2048 x 2048
 ## Citations and Attribution
 
 [**Sources**](/LiDAR-to-Heightmap-Tutorial-Website/resources/03-citations-and-attribution/) →
-
-***
-
