@@ -1,8 +1,8 @@
 ## Step 4: Colorizing Point Cloud
 
-### Overview
-
 ***
+
+### Overview
 
 - To apply the color information from the imagery to the point cloud, we are going to use PDAL's `filters.colorization`.
   
@@ -24,6 +24,8 @@
     </td>
   </tr>
 </table>
+
+***
 
 ### Instructions
 
@@ -64,11 +66,15 @@ EOF
 done
 ```
 
+***
+
 #### Docker Execution 
 
 ```bash
 ./run_pipeline.sh 04_colorize.sh
 ```
+
+***
 
 >[!IMPORTANT]  
 >**I highly recommend you check the point clouds in CloudCompare or QGIS after this step** to make sure the colorization process was successful.
@@ -84,3 +90,5 @@ done
 ## Next Step
 
 [**Step 5: Cleaning Point Cloud**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/05-cleaning-point-cloud/) →
+
+***

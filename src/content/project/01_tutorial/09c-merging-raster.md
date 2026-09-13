@@ -1,16 +1,18 @@
 ## Step 9c: Merging the Individual Raster Tiles
 
-### Overview
-
 ***
+
+### Overview
 
 As mentioned earlier in the tutorial, it is **safer to merge the point clouds first** and create a raster from the single, merged point cloud.  However, this is not always possible when working with **very dense point clouds** or projects covering a **large area**.
 
-### Instructions
-
 ***
 
+### Instructions
+
 For merging **elevation data / heightmap** raster tiles, the following settings are ***recommended*** and ***should not*** normally need to be changed.
+
+***
 
 #### Native Execution
 
@@ -35,6 +37,8 @@ echo "Finished: heightmap_MERGED.tif"
 
 ```
 
+***
+
 #### Docker Execution
 
 ```bash
@@ -50,4 +54,6 @@ echo "Finished: heightmap_MERGED.tif"
 ## Next Step
 
 [**Step 10: Finalizing the Heightmap**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/10-finalizing-heightmap/) →
+
+***
 

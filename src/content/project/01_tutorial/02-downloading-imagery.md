@@ -1,8 +1,8 @@
 ## Step 2: Downloading Imagery
 
-### Overview
-
 ***
+
+### Overview
 
 There are many ways to obtain satellite or aerial imagery for colorizing point clouds. For this tutorial, I will focus on downloading imagery from the **National Oceanic and Atmospheric Administration** (NOAA) [**Data Access Viewer**](https://coast.noaa.gov/dataviewer/#/imagery/search).  
 
@@ -39,6 +39,8 @@ For downloading imagery outside the U.S., I will only briefly cover the QGIS met
 >[!WARNING]  
 >If you plan on sharing your map, make sure the imagery you use is **licensed for public use, redistribution, and derivative works**.
 
+***
+
 ### Instructions
 
 ***
@@ -62,21 +64,19 @@ For downloading imagery outside the U.S., I will only briefly cover the QGIS met
 >[!NOTE]
 >To find out which **Projection and Datum Options** to select, use `pdal info --summary` on the `.laz` file. The output will be a huge wall of text and may be overwhelming at first. Look for the **EPSG code** located here (**A**). Once you have the EPSG code, enter it into [**EPSG.io**](https://epsg.io/6424) to make the information easier to read. On the EPSG.io page, scroll down to **Export** and select the **ESRI WKT** tab.
 
-***
-
 <div align="center">
   <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/02e_pdal_info.webp" 
   alt="PDAL info - terminal output"
   style="max-width: 60%; height: auto;">
 </div>
 
-##### Native Execution 
+#### PDAL Info Native Execution 
 
 ```bash
 pdal info 02_data/01_download/s60975w23650.laz --summary
 ```
 
-##### Docker Execution
+#### PDAL Info Docker Execution
 
 ```bash
 docker run --rm \
@@ -118,3 +118,5 @@ docker run --rm \
 ## Next Step
 
 [**Step 3: Reprojecting Imagery**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/03-reprojecting-imagery/) →
+
+***

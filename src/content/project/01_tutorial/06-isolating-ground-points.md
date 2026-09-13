@@ -1,8 +1,8 @@
 ## Step 6: Isolating Ground Points
 
-### Overview
-
 ***
+
+### Overview
 
 In this step, we are **isolating the ground** from **non-ground points**. To do this, the [**Cloth Simulation Filter**](https://www.cloudcompare.org/doc/wiki/index.php/CSF_(plugin)) (CSF) tool uses a simulated cloth draped over the inverted point cloud (**Example A**) to determine which points can be classified as ground and non-ground. 
 
@@ -60,15 +60,13 @@ In this step, we are **isolating the ground** from **non-ground points**. To do 
   </tr>
 </table>
 
-### Instructions
-
 ***
+
+### Instructions
 
 #### CloudCompare GUI 
 
 -  `Plugins > CSF Filter`
-
-***
 
 | Setting            | Options / Value         | Description                                   |
 | ------------------ | ----------------------- | --------------------------------------------- |
@@ -84,6 +82,8 @@ In this step, we are **isolating the ground** from **non-ground points**. To do 
 >*1 meter = 3.28 feet*
 >
 >`SCENES` and `PROC_SLOPE` are also dependent on your dataset.
+
+***
 
 #### Native Execution (*Linux Mint Flatpak*)
 
@@ -122,6 +122,8 @@ mv "02_data/05_heightmap_sor_filter/${base}"*_offground_points_*.laz \
     echo "Finished: ${base}_OFFGROUND.laz"
 done
 ```
+
+***
 
 #### Docker Execution 
 
@@ -169,5 +171,7 @@ done
 ## *Dataset Already in Meters?*
 
 [**Step 8: Scale Point Cloud to 50%**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/08-scale-50/) →
+
+***
 
 

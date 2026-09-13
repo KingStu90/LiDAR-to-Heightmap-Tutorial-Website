@@ -1,5 +1,7 @@
 ## Step 9a: Merging the Point Cloud
 
+***
+
 ### Overview
 
 ***
@@ -15,6 +17,8 @@ Step 9b: Creating the Heightmap Raster
              ↓
 Step 10: Finalizing the Heightmap
 ```
+
+***
 
 **B)** **Large-Project Alternative Workflow**
 
@@ -32,6 +36,8 @@ Step 10: Finalize Heightmap
 
 ### Instructions
 
+***
+
 #### Native Execution 
 
 ```bash
@@ -44,6 +50,8 @@ pdal merge \
 
 echo "Finished: heightmap_MERGED.laz"
 ```
+
+***
 
 #### Docker Execution
 
@@ -60,3 +68,5 @@ echo "Finished: heightmap_MERGED.laz"
 ## Next Step
 
 [**Step 9b: Creating the Heightmap Raster**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/09b-creating-the-heightmap/) →
+
+***

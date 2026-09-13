@@ -1,8 +1,8 @@
 ## Step 13: Creating the Tree Placement Map
 
-### Overview
-
 ***
+
+### Overview
 
 - ***This process, like the basemap rasterization process, was modified during the writing of this tutorial,*** so I have not done as much testing on this process as the rest of this tutorial.
 
@@ -54,13 +54,13 @@ The filtering process **removes most of the points from the original tile**, so 
 > [!NOTE]  
 > This is one of the steps that **may require some experimentation with different settings to correctly identify trees**. As shown above **(A)**, parts of the El Capitan mountain face were **misidentified as trees**. This could be reduced by further refining `filters.approximatecoplanar` and adding linearity-based filtering. The settings in this tutorial are intentionally kept **conservative and broadly applicable**.
 
+***
+
 ### Instructions
 
 ***
 
 #### 13a_pipeline_trees_filter.json
-
-***
 
 <div align="center">
   <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/13d_pdal_pipeline.webp" 
@@ -93,17 +93,19 @@ The filtering process **removes most of the points from the original tile**, so 
 >[!NOTE]
 >The settings that are **unit-dependent**\* are given in **feet**. **If your original dataset uses meters**, multiply the values given by `0.3048` to convert them to meters.
 
-#### 13b_pipeline_trees_raster.json
-
 ***
 
+#### 13b_pipeline_trees_raster.json
+
 These settings in `13b_pipeline_trees_raster.json` are ***recommended*** and ***should not*** normally need to be changed.
+
+***
 
 #### 13a Tree Filter and Raster
 
 ***
 
-##### Native Execution
+#### Native Execution
 
 ```bash
 mkdir -p 02_data/13a_trees_filter
@@ -149,17 +151,21 @@ done
 
 ```
 
-##### Docker Execution
+***
+
+#### Docker Execution
 
 ```bash
 ./run_pipeline.sh 13a_tree_filter_and_raster.sh
 ```
 
+***
+
 #### 13b Merge Tree Rasters
 
 ***
 
-##### Native Execution
+#### Native Execution
 
 The following settings are ***recommended*** and ***should not*** normally need to be changed.
 
@@ -183,6 +189,8 @@ rm "02_data/13b_trees_rasters/trees_MERGED.vrt"
 echo "Finished: trees_MERGED.tif"
 ```
 
+***
+
 ##### Docker Execution
 
 ```bash
@@ -198,3 +206,5 @@ echo "Finished: trees_MERGED.tif"
 ## Next Step
 
 [**Step 14: Finalizing the Tree Placement Map**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/14-finalizing-tree-placement-map/) →
+
+***

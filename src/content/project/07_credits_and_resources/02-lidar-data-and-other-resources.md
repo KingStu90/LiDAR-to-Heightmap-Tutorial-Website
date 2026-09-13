@@ -1,5 +1,7 @@
 ## LiDAR Data and Other Resources
 
+***
+
 ### LiDAR Data Download Sources
 
 - **USGS 3DEP LidarExplorer**
@@ -44,13 +46,17 @@
   
   [**https://portal.opentopography.org/datasets**](https://portal.opentopography.org/datasets)
 
+***
+
 ### Other Resources
 
 - List of Federal, State, County, City, etc ArcGIS Servers **Curated by Joseph Elfelt**
 
   [**https://mappingsupport.com/p/surf_gis/list-federal-state-county-city-GIS-servers.pdf**](https://mappingsupport.com/p/surf_gis/list-federal-state-county-city-GIS-servers.pdf)
 
-**Tutorials & Guides**
+***
+
+### Tutorials & Guides
 
 ***These are some of the tutorials and guides that helped me get started building this project.***
 
@@ -60,9 +66,13 @@
 
 [**https://www.maphustle.co.nz/blogs/pc-blender**](https://www.maphustle.co.nz/blogs/pc-blender)
 
+***
+
 ## Project Overview
 
 [**README**](/LiDAR-to-Heightmap-Tutorial-Website/) ←
+
+***
 
 ## Map Downloads & More Examples 
 
@@ -71,3 +81,5 @@
 ## Citations and Attribution
 
 [**Sources**](/LiDAR-to-Heightmap-Tutorial-Website/resources/03-citations-and-attribution/) →
+
+***

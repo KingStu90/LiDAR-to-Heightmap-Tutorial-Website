@@ -1,16 +1,16 @@
 ## Step 1: Downloading Point Cloud Data
 
-### Overview
-
 ***
+
+### Overview
 
 Provided with this project is a `downloadlist.txt` file from the [**U.S. Geological Survey LidarExplorer (USGS)**](https://apps.nationalmap.gov/lidar-explorer/#/). It contains the download links for **9 point cloud tiles** covering **Buttonwillow Raceway Park in California**.
 
 While the USGS covers much of the United States, **additional LiDAR datasets** may be available through the individual states' LiDAR [**portals**](/LiDAR-to-Heightmap-Tutorial-Website/resources/02-lidar-data-and-other-resources/).
 
-### Instructions
-
 ***
+
+### Instructions
 
 <table>
   <tr>
@@ -43,6 +43,7 @@ While the USGS covers much of the United States, **additional LiDAR datasets** m
 > [!IMPORTANT]
 > **E)** This entire workflow is set up so all the **commands are run from the project root** `lidar-to-heightmap-tutorial`.
 
+***
 
 #### Native Execution 
 
@@ -55,15 +56,17 @@ wget -v -c -nc \
   --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 ```
 
+***
+
 #### Docker Execution 
 
 ```bash
 ./run_pipeline.sh 01_download.sh
 ```
 
-####  *(Optional)* Shorten File Names
-
 ***
+
+####  *(Optional)* Shorten File Names
 
 ```bash
 docker run --rm \
@@ -93,6 +96,10 @@ docker run --rm \
 
 [**Step 5: Cleaning Point Cloud**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/05-cleaning-point-cloud/) →
 
+***
+
 ## Project Overview
 
 [**README**](/LiDAR-to-Heightmap-Tutorial-Website/) ←
+
+***

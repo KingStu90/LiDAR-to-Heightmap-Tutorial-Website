@@ -1,8 +1,8 @@
 ## Step 9b: Creating the Heightmap Raster
 
-### Overview
-
 ***
+
+### Overview
 
 - This script is set up to work with both workflows: the **recommended workflow** and the **large-project alternative workflow**. 
   
@@ -12,15 +12,13 @@
   
 - In this step, we use CloudCompare's [**rasterize**](https://www.cloudcompare.org/doc/wiki/index.php?title=Rasterize) tool to **create the heightmap** [**raster**](https://desktop.arcgis.com/en/arcmap/latest/manage-data/raster-and-images/what-is-raster-data.htm).
 
-### Instructions
-
 ***
+
+### Instructions
 
 #### CloudCompare GUI 
 
 -  `Tools > Projection > Rasterize`
-
-***
 
 >[!NOTE]
 >When I say "**CloudCompare Interpolate**", I am referring to the "**Interpolate**" option in CloudCompare, which relies on Delaunay triangulation.
@@ -43,6 +41,8 @@ In general, I find CloudCompare **Kriging** to produce a **sharper raster** than
     </td>
   </tr>
 </table>
+
+***
 
 #### Native Execution (*Linux Mint Flatpak*)
 
@@ -84,6 +84,8 @@ for file in "$input_dir"/*.laz; do
 done
 ```
 
+***
+
 #### Docker Execution
 
 ```bash
@@ -100,7 +102,11 @@ done
 
 [**Step 10: Finalizing Heightmap**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/10-finalizing-heightmap/) →
 
+***
+
 ## *Large-Project Alternative Workflow*
 
 [**Step 9c: Merging Individual Raster Tiles**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/09c-merging-raster/) →
+
+***
 

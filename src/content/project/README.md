@@ -1,5 +1,7 @@
 # LiDAR-to-Heightmap Beginner Tutorial
 
+***
+
 A beginner-friendly, reproducible workflow for turning **LiDAR data into heightmaps, basemaps, and tree placement maps for BeamNG.drive**.
 
 Additional **screenshots and download links** for maps can be found [**here**](/LiDAR-to-Heightmap-Tutorial-Website/resources/01-downloads-and-more-examples/).
@@ -50,11 +52,15 @@ The complete project files, scripts, and example data used in this tutorial 
   </tbody>
 </table>
 
+***
+
 ## Who This Is For
 
 **I did my best to write this tutorial for the person I was when I started**. Because of this, the tutorial is fairly in-depth. There are a lot of tutorials about Geographic Information Systems (GIS) and processing LiDAR data, **but it can be difficult to know what to search for when you don't know the basic terminology**. 
 
 My goal with this tutorial is to **provide a reproducible workflow** while introducing the GIS concepts along the way. This is **not intended to be the definitive way** to process LiDAR data. It is the workflow that worked for me, and different datasets may require different tools, settings, or approaches. The tutorial provides **downloadable example data** so you can follow along **step-by-step**, while also showing how the **same workflow and code** can be adapted to your own project.
+
+***
 
 ## What This Tutorial Does
 
@@ -92,12 +98,16 @@ One ***potential*** way this project could be expanded is by using **LiDAR data 
   >
 </div>
 
+***
+
 ## Requirements
 
 >[!IMPORTANT]
 >All of the steps in the tutorial provide a “**Native Execution**” command which **requires the user to have the program used by that step installed on their PC**.
 >
 >There is also a “**Docker Execution**” command which requires **Docker**. The advantage of using Docker is that the programs and dependencies used by the Docker workflow are installed in a self-contained environment, **so you don’t have to install and configure each program separately**.
+
+***
 
 ### Native Execution
 
@@ -120,6 +130,8 @@ The native workflow requires the software used by each step to be installed on y
 - [**LAStools**](https://rapidlasso.de/downloads/) (*Optional*) - LiDAR processing software with a mix of **free and paid tools**. Alternative method for merging large datasets
 
 *Depending on your operating system and what dependencies are installed, you may need to do some troubleshooting to get all the programs working correctly*.
+
+***
 
 ### Docker Execution
 
@@ -148,6 +160,8 @@ Individual processing scripts can then be run through Docker:
 
 >[!NOTE]
 >To run the 'Docker Execution' commands **with your own project data**, edit the `.sh` text files found in the `03_scripts` directory.
+
+***
 
 ## Why I Made This
 
@@ -196,9 +210,13 @@ Fast forward to this year: I made the switch to Linux, and BeamNG.drive is one o
   </tr>
 </table>
 
+***
+
 ## Start Tutorial
 
 [**Step 1: Downloading LiDAR Data**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/01-downloading-point-cloud-data/) →
+
+***
 
 ## Map Downloads & More Examples 
 
@@ -224,6 +242,8 @@ My interest in LiDAR also connects with my interest in drones. I originally got 
 
 *Disclaimer: This project has been a great experience in **learning to write and understand code**. The majority of the scripts were written using the free ChatGPT model. **However, it took considerable planning, modifying, and testing to get this tutorial to work with multiple workflows**. I have purposely kept the "Native Execution" commands as simple as possible to help other non-technical users understand what the script is accomplishing*.
 
+***
+
 ## Feedback & Support
 
 If you find an issue with the tutorial, have a question, or have feedback on the workflow, I'd be happy to hear from you at <b>kingstuart75@gmail.com</b>.
@@ -233,3 +253,5 @@ If you find an issue with the tutorial, have a question, or have feedback on the
 If the tutorial helped you out and you'd like to support the project, the easiest way is to **share the link** with someone who might find it useful. You can also **buy me a coffee**.
 
 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="StuartKing" data-color="#FFDD00" data-emoji="" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+
+***

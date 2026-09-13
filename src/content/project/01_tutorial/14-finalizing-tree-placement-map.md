@@ -1,20 +1,20 @@
 ## Step 14: Finalizing the Tree Placement Map
 
-### Overview
-
 ***
+
+### Overview
 
 - This step combines several GDAL processing operations.
    
 - The **values used** throughout the commands are **specific to this tutorial example** and BeamNG.drive.
+
+***
 
 ### Instructions
 
 ***
 
 #### 1) Scaling the Tree Placement Map
-
-***
 
 - For BeamNG.drive, the **Tree Placement Map** should be resized with `outsize` to the \***same dimensions**\* as `heightmap_MERGED.tif` from **Step 10**.
 
@@ -47,9 +47,9 @@ docker run --rm \
 echo "Finished: $output_file"
 ```
 
-#### 2) Cropping Tree Placement Map
-
 ***
+
+#### 2) Cropping Tree Placement Map
 
 Crop the **Tree Placement Map** using the **same crop coordinates** used for `heightmap_MERGED.tif` in **Step 10**.
 
@@ -73,9 +73,9 @@ docker run --rm \
 echo "Finished: $output_file"
 ```
 
-#### 3) Find the Minimum and Maximum Values
-
 ***
+
+#### 3) Find the Minimum and Maximum Values
 
 Use `gdalinfo -mm` or **QGIS** to obtain the **minimum and maximum** pixel values needed for the `scale` operation in the next step.
 
@@ -88,9 +88,9 @@ docker run --rm \
     gdalinfo 02_data/14_final_tree_placement_map/trees_MERGED_SCALED_CROP.tif -mm
 ```
 
-#### 4) Convert to 8-Bit `.png`
-
 ***
+
+#### 4) Convert to 8-Bit `.png`
 
 **Outputs the final Tree Placement Map**. Replace `buttonwillow` with your own name.
 
@@ -123,6 +123,8 @@ echo "Finished: $output_file"
 
 [**Step 13: Creating the Tree Placement Map**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/13-isolating-trees/)  ←
 
+***
+
 ## Map Downloads & More Examples 
 
 [**Final Results**](/LiDAR-to-Heightmap-Tutorial-Website/resources/01-downloads-and-more-examples/) →
@@ -134,3 +136,5 @@ echo "Finished: $output_file"
 ## LiDAR Data and Other Resources
 
 [**Useful Resources**](/LiDAR-to-Heightmap-Tutorial-Website/resources/02-lidar-data-and-other-resources/) →
+
+***

@@ -1,6 +1,10 @@
 ## Citations and Attribution
 
+***
+
 ### Downloadable Maps - Data Sources
+
+***
 
 #### 1) Buttonwillow Raceway Park - California
 
@@ -62,7 +66,11 @@ Washington Geological Survey, 2025, Mason County Refresh24 2025 project \[lidar 
 
 U.S. Geological Survey, USGS NAIP Imagery, accessed July 28, 2026 at URL [**https://imagery.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer**](https://imagery.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer)
 
+***
+
 ### Screenshots - Data Sources
+
+***
 
 #### 1) King County Aerial Imagery
 
@@ -84,9 +92,13 @@ Tennessee Department of Transportation Aerial Surveys, Tennessee orthoimagery, a
 
 United States Department of Agriculture, Farm Production and Conservation Business Center, Geospatial Enterprise Operations; Hawaii Statewide GIS Program, Vivid 2022 imagery, accessed July 5, 2026 at URL [**https://geodata.hawaii.gov/arcgis/rest/services/SoH_Imagery/Vivid_2022/ImageServer**](https://geodata.hawaii.gov/arcgis/rest/services/SoH_Imagery/Vivid_2022/ImageServer)
 
+***
+
 ## Project Overview
 
 [**README**](/LiDAR-to-Heightmap-Tutorial-Website/) ←
+
+***
 
 ## Map Downloads & More Examples 
 
@@ -95,3 +107,5 @@ United States Department of Agriculture, Farm Production and Conservation Busine
 ## LiDAR Data and Other Resources
 
 [**Useful Resources**](/LiDAR-to-Heightmap-Tutorial-Website/resources/02-lidar-data-and-other-resources/) →
+
+***

@@ -1,8 +1,8 @@
 ## Step 10: Finalizing the Heightmap
 
-### Overview
-
 ***
+
+### Overview
 
 - This step combines several GDAL processing operations.
   
@@ -12,9 +12,9 @@
   
 - BeamNG.drive supports map sizes `512x512`, `1024x1024`, `2048x2048`, `4096x4096`, `8192x8192`.
 
-### Instructions
-
 ***
+
+### Instructions
 
 *If running GDAL natively, remove the following Docker-specific code from each command:*
 
@@ -26,9 +26,9 @@ docker run --rm \
     lidar-pipeline \
 ```
 
-#### 1) Cropping the Heightmap
-
 ***
+
+#### 1) Cropping the Heightmap
 
 *`heightmap_MERGED.tif` when opened in GIMP may be a blank canvas.*
 
@@ -64,11 +64,15 @@ docker run --rm \
 echo "Finished: $output_file"
 ```
 
+***
+
 #### 2) Convert Heightmap to 16-Bit
 
 ***
 
 **A) Find Minimum and Maximum Heights**
+
+
 
 ***QGIS Method***
 
@@ -90,9 +94,9 @@ docker run --rm \
     gdalinfo 02_data/10_final_heightmap/heightmap_MERGED_CROP.tif -mm
 ```
 
-**B) Convert to 16-Bit**
-
 ***
+
+**B) Convert to 16-Bit**
 
 ```bash
 #!/bin/bash
@@ -124,9 +128,9 @@ echo "Finished: $output_file"
 >*Scaled Height (50%) = 9.457 m*<br>
 >*Actual Height (2x) = 18.914 m*
 
-#### 3) Convert `.tif` to `.png`
-
 ***
+
+#### 3) Convert `.tif` to `.png`
 
 **Outputs the final heightmap**. Replace `buttonwillow_h18.914` with your own name.
 
@@ -165,3 +169,5 @@ echo "Finished: $output_file"
 ## Next Step
 
 [**Step 11: Creating the Basemap Raster**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/11-creating-the-basemap-cloudcompare/) →
+
+***

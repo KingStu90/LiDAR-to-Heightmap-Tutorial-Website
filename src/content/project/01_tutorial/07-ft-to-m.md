@@ -1,8 +1,8 @@
 ## Step 7: Converting from Feet to Meters (if needed)
 
-### Overview
-
 ***
+
+### Overview
 
 - Since [**January 1, 2023**](https://www.nist.gov/pml/us-surveyfoot), the **U.S. survey foot has been obsolete**. New datasets should use the international foot: `1 ft = 0.3048 m`.
   
@@ -11,6 +11,8 @@
 - **For this tutorial**, the provided data is in **U.S. survey feet**, while BeamNG.drive uses **meters**.
   
 - To find out what unit of measurement your dataset is in, use `pdal info` (*covered in Step 2*).
+
+***
 
 ### Instructions
 
@@ -49,6 +51,8 @@ EOF
 done
 ```
 
+***
+
 #### Docker Execution 
 
 ```bash
@@ -64,3 +68,5 @@ done
 ## Next Step
 
 [**Step 8: Scaling Point Cloud to 50%**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/08-scale-50/) →
+
+***

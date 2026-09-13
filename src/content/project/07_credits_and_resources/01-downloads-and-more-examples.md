@@ -1,5 +1,7 @@
 ## Map Downloads and Setup Information
 
+***
+
 *The BeamNG.drive setup portion of the process is not covered in detail in this guide. Setting up everything in BeamNG.drive can be a process on its own and would make this guide considerably longer.*
 
 Included are the **original** and the **modified versions** of the heightmap and basemap, along with the tree placement map where applicable.
@@ -12,6 +14,8 @@ The **modified versions** are located under `mapname` > `terrain` > `materialnam
 >**Feel free to modify and use these maps in your own projects**.
 >
 >If you find the maps or this tutorial useful, please consider sharing the link with others who might find it helpful. **A link back to this tutorial is always appreciated!**
+
+***
 
 ### BeamNG.drive Import Settings
 
@@ -50,6 +54,8 @@ The **modified versions** are located under `mapname` > `terrain` > `materialnam
 ***
 
 ## Downloadable Maps
+
+***
 
 ### Swing Arm City, Utah
 
@@ -177,6 +183,8 @@ Map size: 4096 x 4096
 >[!warning]
 >If you plan on sharing your map, make sure the imagery you use is **licensed for public use, redistribution, and derivative works**. Some imagery may be free to view or use but still restrict you from distributing the resulting map. **The maps below are not downloadable for that reason**.
 
+***
+
 ### DirtFish Rally School, Washington
 
 Map size: 4096 x 4096 
@@ -213,7 +221,6 @@ Map size: 2048 x 2048
 <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/98_seattle_golf_club_2.webp" alt="Seattle Golf Club in-game screenshot">
 
 </div>
-</table>
 
 *Aerial Imagery Credit:* **EagleView Technology licensed to King County** [**Aerial 2023**](https://gismaps.kingcounty.gov/arcgis/rest/services/BaseMaps/KingCo_Aerial_2023/MapServer)
 
@@ -250,6 +257,8 @@ Map size: 2048 x 2048
 
 [**README**](/LiDAR-to-Heightmap-Tutorial-Website/) ←
 
+***
+
 ## LiDAR Data and Other Resources
 
 [**Useful Resources**](/LiDAR-to-Heightmap-Tutorial-Website/resources/02-lidar-data-and-other-resources/) →
@@ -257,4 +266,6 @@ Map size: 2048 x 2048
 ## Citations and Attribution
 
 [**Sources**](/LiDAR-to-Heightmap-Tutorial-Website/resources/03-citations-and-attribution/) →
+
+***
 

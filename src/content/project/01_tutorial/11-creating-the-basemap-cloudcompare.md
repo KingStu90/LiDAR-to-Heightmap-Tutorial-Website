@@ -1,8 +1,8 @@
 ## Step 11: Creating the Basemap Raster
 
-### Overview
-
 ***
+
+### Overview
 
 This step uses the color applied to the point cloud in Step 4 to **create the basemap raster**.
 
@@ -38,18 +38,20 @@ As shown in the photos below, **PDAL IDW** interpolation **is not able to fill 
 > 
 > ***Fewer points → more interpolation → blurrier image***
 
+***
+
 ### Instructions
 
 ***
 
 #### Step 11a: Creating the Basemap Raster via *CloudCompare*
 
-***
-
 >[!NOTE]
 >We are using `GRID_STEP 0.5` to create a **higher-resolution intermediate raster** before **downsampling in Step 12**. This allows more of the color variation from the point cloud to be represented before the final resampling step. When resampled with Lanczos, **this additional detail can then be used when calculating the final pixels, generally producing a sharper-looking basemap**.
 
-##### Native Execution (*Linux Mint Flatpak*)
+***
+
+#### Native Execution (*Linux Mint Flatpak*)
 
 ```bash
 #!/bin/bash
@@ -81,19 +83,23 @@ for file in 02_data/04_colorize/*.laz; do
 done
 ```
 
-##### Docker Execution
+***
+
+#### Docker Execution
 
 ```bash
 ./run_pipeline.sh 11a_basemap_raster.sh
 ```
 
-#### Step 11b: Merging the Basemap
-
 ***
+
+#### Step 11b: Merging the Basemap
 
 For merging **imagery** raster tiles, the following settings are ***recommended*** and ***should not*** normally need to be changed.
 
-##### Native Execution
+***
+
+#### Native Execution
 
 ```bash
 #!/bin/bash
@@ -119,7 +125,9 @@ rm "02_data/11_basemap_raster/basemap_MERGED.vrt"
 echo "Finished: basemap_MERGED.tif"
 ```
 
-##### Docker Execution
+***
+
+#### Docker Execution
 
 ```bash
 ./run_pipeline.sh 11b_basemap_merge_tif.sh
@@ -134,3 +142,5 @@ echo "Finished: basemap_MERGED.tif"
 ## Next Step
 
 [**Step 12: Finalizing the Basemap**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/12-finalizing-basemap/) →
+
+***

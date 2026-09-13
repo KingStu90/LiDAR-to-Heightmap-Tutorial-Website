@@ -1,8 +1,8 @@
 ## Step 3: Reprojecting Imagery 
 
-### Overview
-
 ***
+
+### Overview
 
 - This tutorial is more focused on the end result rather than explaining some of the more technical Geographic Information System (GIS) concepts, such as the **Coordinate Reference System** (CRS). For these topics, I will point to other [**resources**](https://earthdatascience.org/courses/earth-analytics/spatial-data-r/intro-to-coordinate-reference-systems/).
 
@@ -63,9 +63,9 @@
   </tr>
 </table>
 
-### Instructions
-
 ***
+
+### Instructions
 
 <div align="center">
   <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/03e_gdalinfo.webp" 
@@ -125,6 +125,8 @@ rm mosaic.vrt reprojected.vrt
 echo "Finished: MERGED_REPROJECT.tif"
 ```
 
+***
+
 #### Docker Execution 
 
 ```bash
@@ -140,3 +142,5 @@ echo "Finished: MERGED_REPROJECT.tif"
 ## Next Step
 
 [**Step 4: Colorizing Point Cloud**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/04-colorizing-point-cloud/) →
+
+***

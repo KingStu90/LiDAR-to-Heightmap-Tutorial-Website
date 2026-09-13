@@ -1,5 +1,7 @@
 ## Creating the Basemap via PDAL
 
+***
+
 ### Overview
 
 *This is the original method I used to create the basemap raster using PDAL*.
@@ -8,7 +10,11 @@ The current tutorial uses **CloudCompare's Rasterize tool** because it produces 
 
 This method produces the **same type of basemap** used in the main workflow, so after finishing this step, continue with **Step 12**.
 
+***
+
 ### Instructions
+
+***
 
 #### 1) Check RGB Values
 
@@ -27,6 +33,8 @@ Look for the **Red**, **Green**, and **Blue** values in the output. The `ma
 | ---------------- | ------------ | --------- | -------------------------------------- |
 | Unsigned Integer | 8            | `0-255`   | `uint8`(*PDAL*) <br>`Byte` (*GDAL*)    |
 | Unsigned Integer | 16           | `0-65535` | `uint16`(*PDAL*) <br>`UInt16` (*GDAL*) |
+
+***
 
 #### 2) Basemap Rasterization
 
@@ -56,9 +64,13 @@ The **PDAL pipeline** below defines **how the point cloud is rasterized**. The
 
 *The pipeline file `99_pipeline_rasterize.json` is located in the `04_resources` folder.*
 
+***
+
 **Bash Scripts**
 
 Choose **1 Tile** if you have limited RAM. Choose **4 Tiles** to process **four tiles in parallel**, which can significantly increase memory usage.
+
+***
 
 **Native Execution - 1 Tile**
 
@@ -78,6 +90,8 @@ for file in 02_data/04_colorize/*.laz; do
     echo "Finished: ${base}"
 done
 ```
+
+***
 
 **Native Execution - 4 Tiles**
 
@@ -104,11 +118,15 @@ xargs -0 -I {} -P 4 bash -c '
 ' _ {} "$PIPELINE" "$OUTPUT_DIR"
 ```
 
+***
+
 **Docker Execution - 1 Tile**
 
 ```bash
 ./run_pipeline.sh 99a_basemap_raster_1_tile.sh
 ```
+
+***
 
 **Docker Execution - 4 Tiles**
 
@@ -116,7 +134,11 @@ xargs -0 -I {} -P 4 bash -c '
 ./run_pipeline.sh 99a_basemap_raster_4_tiles.sh
 ```
 
+***
+
 #### 3) Merging RGB Basemap Layers
+
+***
 
 **Native Execution**
 
@@ -165,11 +187,15 @@ rm \
 echo "Finished: basemap_MERGED.tif"
 ```
 
+***
+
 **Docker Execution**
 
 ```bash
 ./run_pipeline.sh 99b_basemap_merge_rgb.sh
 ```
+
+***
 
 ## Previous Step
 
@@ -178,3 +204,5 @@ echo "Finished: basemap_MERGED.tif"
 ## Next Step
 
 [**Step 12: Finalizing the Basemap**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/12-finalizing-basemap/) →
+
+***

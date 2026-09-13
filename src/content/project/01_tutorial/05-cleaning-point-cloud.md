@@ -1,8 +1,8 @@
 ## Step 5: Cleaning Point Cloud
 
-### Overview
-
 ***
+
+### Overview
 
 **Steps 5 and 6** use **CloudCompare's Command Line Interface** (CLI) to process the point cloud instead of the **Graphical User Interface** (GUI).
 
@@ -39,9 +39,9 @@ The **important takeaway** is that for smaller projects, you can generally do mo
 
 For this tutorial, the code I have provided **uses CloudCompare's SOR Filter** to **remove statistical outliers**, as shown in the Before and After photos. The values used are relatively conservative and **may have to be changed for different datasets.**
 
-### Instructions
-
 ***
+
+### Instructions
 
 #### CloudCompare GUI 
 
@@ -78,6 +78,8 @@ for file in 02_data/04_colorize/*.laz; do
 done
 ```
 
+***
+
 #### Docker Execution
 
 ```bash
@@ -106,3 +108,5 @@ done
 ## Next Step
 
 [**Step 6: Isolating Ground Points**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/06-isolating-ground-points/) →
+
+***
