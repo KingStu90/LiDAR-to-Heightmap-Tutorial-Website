@@ -6,7 +6,7 @@
 
 - This step combines several GDAL processing operations.
    
-- The **values used** throughout the commands are **specific to this tutorial example** and BeamNG.drive.
+- The values used throughout the commands are **specific to this tutorial example** and BeamNG.drive.
 
 ***
 
@@ -14,7 +14,7 @@
 
 #### 1) Scaling the Tree Placement Map
 
-- For BeamNG.drive, the **Tree Placement Map** should be resized with `outsize` to the \***same dimensions**\* as `heightmap_MERGED.tif` from **Step 10**.
+- For BeamNG.drive, the Tree Placement Map should be resized with `outsize` to the \***same dimensions**\* as `heightmap_MERGED.tif` from *Step 10*.
 
 - The remaining settings are **recommended defaults** for this workflow and should not normally need to be changed.
 
@@ -49,7 +49,7 @@ echo "Finished: $output_file"
 
 #### 2) Cropping Tree Placement Map
 
-- Crop the **Tree Placement Map** using the **same crop coordinates** used for `heightmap_MERGED.tif` in **Step 10**.
+- Crop the Tree Placement Map using the **same crop coordinates** used for `heightmap_MERGED.tif` in *Step 10*.
 
 ```bash
 #!/bin/bash
@@ -75,7 +75,7 @@ echo "Finished: $output_file"
 
 #### 3) Find the Minimum and Maximum Values
 
-- Use `gdalinfo -mm` or **QGIS** to obtain the **minimum and maximum** pixel values needed for the `scale` operation in the next step.
+- Use `gdalinfo -mm` or QGIS to obtain the **minimum and maximum** pixel values needed for the `scale` operation in the next step.
 
 ```bash
 docker run --rm \
