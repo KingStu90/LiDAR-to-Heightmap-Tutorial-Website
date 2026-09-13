@@ -6,7 +6,7 @@ Additional **screenshots and download links** for maps can be found [**here**](/
 
 The complete project files, scripts, and example data used in this tutorial are available on GitHub.
 
-[**View the Project Repository**](https://kingstu90.github.io/LiDAR-to-Heightmap-Tutorial-Website/) →
+[**View the Project Repository**](https://github.com/KingStu90/LiDAR-to-Heightmap-Beginner-Tutorial) →
 
 [**Start the Tutorial**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/01-downloading-point-cloud-data/) →
 
