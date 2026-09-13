@@ -109,9 +109,7 @@ One ***potential*** way this project could be expanded is by using **LiDAR data 
 
 ### Native Execution
 
-The native workflow requires the software used by each step to be installed on your computer.
-
-***All of the software used in the tutorial is listed below and is free to download.***
+All of the software used in the tutorial is listed below and is free to download.
 
 - [**CloudCompare**](https://www.cloudcompare.org/) (*Required*) - 3D point cloud and mesh analysis tool 
 
