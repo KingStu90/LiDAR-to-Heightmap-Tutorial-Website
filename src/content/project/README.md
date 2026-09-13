@@ -162,7 +162,7 @@ My goal with this tutorial is to **provide a reproducible workflow** while intro
 
 - [**LAStools**](https://rapidlasso.de/downloads/) (*Optional*) - LiDAR processing software with a mix of **free and paid tools**. I only used it as an alternative for merging large datasets (*more efficient than PDAL*).
 
-*Depending on your operating system and what dependencies are installed, you may need to do some troubleshooting to get all the programs working correctly*.
+*Depending on your operating system and installed dependencies, you may need to do some troubleshooting to get all the programs working correctly.*
 
 #### Docker Execution - Software Prerequisites
 
