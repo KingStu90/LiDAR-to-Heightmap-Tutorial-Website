@@ -36,7 +36,7 @@ As shown in the photos below, **PDAL IDW interpolation may leave areas with 
 > [!IMPORTANT]  
 > Use the **original colored point cloud before cleaning/filtering** to generate the raster. The processed point cloud contains fewer points, which can leave gaps when creating the basemap.
 > 
-> ***Fewer points → more interpolation → blurrier image***
+> ***Fewer points → More interpolation → Blurrier image***
 
 ***
 
