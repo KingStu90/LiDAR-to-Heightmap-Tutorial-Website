@@ -197,7 +197,7 @@ echo "Finished: trees_MERGED.tif"
 
 ***
 
-##### Docker Execution
+#### Docker Execution
 
 ```bash
 ./run_pipeline.sh 13b_trees_merge_tif.sh
