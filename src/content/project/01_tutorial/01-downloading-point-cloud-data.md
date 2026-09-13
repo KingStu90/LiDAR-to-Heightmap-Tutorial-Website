@@ -2,11 +2,15 @@
 
 ### Overview
 
+***
+
 Provided with this project is a `downloadlist.txt` file from the [**U.S. Geological Survey LidarExplorer (USGS)**](https://apps.nationalmap.gov/lidar-explorer/#/). It contains the download links for **9 point cloud tiles** covering **Buttonwillow Raceway Park in California**.
 
 While the USGS covers much of the United States, **additional LiDAR datasets** may be available through the individual states' LiDAR [**portals**](/LiDAR-to-Heightmap-Tutorial-Website/resources/02-lidar-data-and-other-resources/).
 
 ### Instructions
+
+***
 
 <table>
   <tr>
