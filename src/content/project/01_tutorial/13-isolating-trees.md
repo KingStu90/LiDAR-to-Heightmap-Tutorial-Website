@@ -2,6 +2,8 @@
 
 ### Overview
 
+***
+
 - ***This process, like the basemap rasterization process, was modified during the writing of this tutorial,*** so I have not done as much testing on this process as the rest of this tutorial.
 
 - This step uses **PDAL filters** on the point cloud tiles from Step 4 to **isolate points associated with trees**.
@@ -54,7 +56,11 @@ The filtering process **removes most of the points from the original tile**, so 
 
 ### Instructions
 
+***
+
 #### 13a_pipeline_trees_filter.json
+
+***
 
 <div align="center">
   <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/13d_pdal_pipeline.webp" 
@@ -89,9 +95,13 @@ The filtering process **removes most of the points from the original tile**, so 
 
 #### 13b_pipeline_trees_raster.json
 
+***
+
 These settings in `13b_pipeline_trees_raster.json` are ***recommended*** and ***should not*** normally need to be changed.
 
 #### 13a Tree Filter and Raster
+
+***
 
 ##### Native Execution
 
@@ -147,6 +157,8 @@ done
 
 #### 13b Merge Tree Rasters
 
+***
+
 ##### Native Execution
 
 The following settings are ***recommended*** and ***should not*** normally need to be changed.
@@ -176,6 +188,8 @@ echo "Finished: trees_MERGED.tif"
 ```bash
 ./run_pipeline.sh 13b_trees_merge_tif.sh
 ```
+
+***
 
 ## Previous Step
 

@@ -2,6 +2,8 @@
 
 ### Overview
 
+***
+
 - To apply the color information from the imagery to the point cloud, we are going to use PDAL's `filters.colorization`.
   
 - **Adding color to a point cloud can make it much easier to see the data**, especially when viewing it in 3D point cloud software such as CloudCompare.
@@ -24,6 +26,8 @@
 </table>
 
 ### Instructions
+
+***
 
 #### Native Execution 
 
@@ -70,7 +74,9 @@ done
 >**I highly recommend you check the point clouds in CloudCompare or QGIS after this step** to make sure the colorization process was successful.
 >
 >**This process will still output "completed" `.laz` files even if the imagery and point cloud data are misaligned.** Depending on the workflow of later processes, you may not be able to colorize the point cloud later if its spatial information has been lost or overwritten.
-  
+
+***
+
 ## Previous Step
 
 [**Step 3: Reprojecting Imagery**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/03-reprojecting-imagery/)  ←

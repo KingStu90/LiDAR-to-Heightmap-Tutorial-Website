@@ -2,6 +2,8 @@
 
 ### Overview
 
+***
+
 - This step combines several GDAL processing operations.
   
 - Having access to **QGIS** and **GIMP** can make this process easier, ***but they are not required***.
@@ -11,6 +13,8 @@
 - BeamNG.drive supports map sizes `512x512`, `1024x1024`, `2048x2048`, `4096x4096`, `8192x8192`.
 
 ### Instructions
+
+***
 
 *If running GDAL natively, remove the following Docker-specific code from each command:*
 
@@ -23,6 +27,8 @@ docker run --rm \
 ```
 
 #### 1) Cropping the Heightmap
+
+***
 
 *`heightmap_MERGED.tif` when opened in GIMP may be a blank canvas.*
 
@@ -60,6 +66,8 @@ echo "Finished: $output_file"
 
 #### 2) Convert Heightmap to 16-Bit
 
+***
+
 **A) Find Minimum and Maximum Heights**
 
 ***QGIS Method***
@@ -83,6 +91,8 @@ docker run --rm \
 ```
 
 **B) Convert to 16-Bit**
+
+***
 
 ```bash
 #!/bin/bash
@@ -116,6 +126,8 @@ echo "Finished: $output_file"
 
 #### 3) Convert `.tif` to `.png`
 
+***
+
 **Outputs the final heightmap**. Replace `buttonwillow_h18.914` with your own name.
 
 ```bash
@@ -143,6 +155,8 @@ echo "Finished: $output_file"
 >The original heightmap **should not be resized or resampled in a image editor** if it is being used as the elevation data. Changes to the pixel values can alter the resulting terrain. 
 >
 >**Heightmap modifications** may be appropriate for **visual purposes**, such as generating normal maps or other PBR textures.
+
+***
 
 ## Previous Step
 

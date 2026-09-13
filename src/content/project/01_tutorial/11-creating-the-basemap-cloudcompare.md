@@ -2,6 +2,8 @@
 
 ### Overview
 
+***
+
 This step uses the color applied to the point cloud in Step 4 to **create the basemap raster**.
 
 ***While writing this tutorial, I found a better approach for creating the basemap***. The original version of this tutorial used a **PDAL pipeline** to create the raster, but in this tutorial we’ll use **CloudCompare Rasterize tool** instead.
@@ -38,7 +40,11 @@ As shown in the photos below, **PDAL IDW** interpolation **is not able to fill 
 
 ### Instructions
 
+***
+
 #### Step 11a: Creating the Basemap Raster via *CloudCompare*
+
+***
 
 >[!NOTE]
 >We are using `GRID_STEP 0.5` to create a **higher-resolution intermediate raster** before **downsampling in Step 12**. This allows more of the color variation from the point cloud to be represented before the final resampling step. When resampled with Lanczos, **this additional detail can then be used when calculating the final pixels, generally producing a sharper-looking basemap**.
@@ -83,6 +89,8 @@ done
 
 #### Step 11b: Merging the Basemap
 
+***
+
 For merging **imagery** raster tiles, the following settings are ***recommended*** and ***should not*** normally need to be changed.
 
 ##### Native Execution
@@ -116,6 +124,8 @@ echo "Finished: basemap_MERGED.tif"
 ```bash
 ./run_pipeline.sh 11b_basemap_merge_tif.sh
 ```
+
+***
 
 ## Previous Step
 

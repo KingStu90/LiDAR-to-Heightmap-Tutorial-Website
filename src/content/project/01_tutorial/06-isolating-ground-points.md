@@ -2,6 +2,8 @@
 
 ### Overview
 
+***
+
 In this step, we are **isolating the ground** from **non-ground points**. To do this, the [**Cloth Simulation Filter**](https://www.cloudcompare.org/doc/wiki/index.php/CSF_(plugin)) (CSF) tool uses a simulated cloth draped over the inverted point cloud (**Example A**) to determine which points can be classified as ground and non-ground. 
 
 <p style="text-align: center;"><strong>Example A</strong></p>
@@ -60,9 +62,13 @@ In this step, we are **isolating the ground** from **non-ground points**. To do 
 
 ### Instructions
 
+***
+
 #### CloudCompare GUI 
 
 -  `Plugins > CSF Filter`
+
+***
 
 | Setting            | Options / Value         | Description                                   |
 | ------------------ | ----------------------- | --------------------------------------------- |
@@ -134,6 +140,8 @@ done
 ./run_pipeline.sh 06b_heightmap_las_to_laz.sh
 ```
 
+***
+
 #### Alternative Methods of Filtering/Cleaning
 
 -  CloudCompare [**Noise Filter**](https://www.cloudcompare.org/doc/wiki/index.php/Noise_filter)
@@ -147,7 +155,9 @@ done
 	- `Edit > Scalar Fields > Filter by Value`
 
 -  PDAL has many [**filters**](https://pdal.io/en/stable/stages/filters.html), including a [**CSF**](https://pdal.io/en/stable/stages/filters.csf.html#filters-csf) filter that supports a `where` option. This can be used to control which points are passed to the CSF filter and may provide a way to exclude steep or vertical surfaces. *I have not tested this approach*.
-  
+
+***
+
 ## Previous Step
 
 [**Step 5: Cleaning Point Cloud**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/05-cleaning-point-cloud/)  ←

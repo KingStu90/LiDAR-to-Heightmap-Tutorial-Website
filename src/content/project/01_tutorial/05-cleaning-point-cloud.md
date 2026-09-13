@@ -2,6 +2,8 @@
 
 ### Overview
 
+***
+
 **Steps 5 and 6** use **CloudCompare's Command Line Interface** (CLI) to process the point cloud instead of the **Graphical User Interface** (GUI).
 
 | **CLI Benefit**                                                                                    | **GUI Benefit**                                                                        |
@@ -39,9 +41,13 @@ For this tutorial, the code I have provided **uses CloudCompare's SOR Filter** t
 
 ### Instructions
 
+***
+
 #### CloudCompare GUI 
 
 -  `Tools > Clean > SOR filter`
+
+***
 
 #### Native Execution (*Linux Mint Flatpak*)
 
@@ -90,6 +96,8 @@ done
 ```bash
 ./run_pipeline.sh 05b_heightmap_las_to_laz.sh
 ```
+
+***
 
 ## Previous Step
 

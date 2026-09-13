@@ -2,6 +2,8 @@
 
 ### Overview
 
+***
+
 - This tutorial is more focused on the end result rather than explaining some of the more technical Geographic Information System (GIS) concepts, such as the **Coordinate Reference System** (CRS). For these topics, I will point to other [**resources**](https://earthdatascience.org/courses/earth-analytics/spatial-data-r/intro-to-coordinate-reference-systems/).
 
 - The main thing to make sure of is that the **imagery** and **point cloud** use the **same EPSG code** so they line up correctly during the colorization process.
@@ -63,6 +65,8 @@
 
 ### Instructions
 
+***
+
 <div align="center">
   <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/03e_gdalinfo.webp" 
   alt="GDAL info terminal output"
@@ -89,9 +93,9 @@ docker run --rm \
    gdalinfo 02_data/01_download/2022_4BandImagery_California_J1425462tR0_C0.tif
 ```
 
+***
+
 #### Native Execution 
-
-
 
 ```bash
 #!/bin/bash
@@ -126,6 +130,8 @@ echo "Finished: MERGED_REPROJECT.tif"
 ```bash
 ./run_pipeline.sh 03_reproject.sh
 ```
+
+***
 
 ## Previous Step
 

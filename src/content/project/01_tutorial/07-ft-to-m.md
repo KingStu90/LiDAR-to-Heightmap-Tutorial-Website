@@ -2,6 +2,8 @@
 
 ### Overview
 
+***
+
 - Since [**January 1, 2023**](https://www.nist.gov/pml/us-surveyfoot), the **U.S. survey foot has been obsolete**. New datasets should use the international foot: `1 ft = 0.3048 m`.
   
 - Older datasets may still use the **U.S. survey foot**: `1 ft = 0.304800609601219 m`.
@@ -11,6 +13,8 @@
 - To find out what unit of measurement your dataset is in, use `pdal info` (*covered in Step 2*).
 
 ### Instructions
+
+***
 
 #### Native Execution 
 
@@ -50,6 +54,8 @@ done
 ```bash
 ./run_pipeline.sh 07_heightmap_ft_to_m.sh
 ```
+
+***
 
 ## Previous Step
 

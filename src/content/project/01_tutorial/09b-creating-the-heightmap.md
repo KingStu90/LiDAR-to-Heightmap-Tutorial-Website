@@ -2,6 +2,8 @@
 
 ### Overview
 
+***
+
 - This script is set up to work with both workflows: the **recommended workflow** and the **large-project alternative workflow**. 
   
 - Recommended Workflow: **Step 9a → Step 9b → Step 10**
@@ -12,9 +14,13 @@
 
 ### Instructions
 
+***
+
 #### CloudCompare GUI 
 
 -  `Tools > Projection > Rasterize`
+
+***
 
 >[!NOTE]
 >When I say "**CloudCompare Interpolate**", I am referring to the "**Interpolate**" option in CloudCompare, which relies on Delaunay triangulation.
@@ -83,6 +89,8 @@ done
 ```bash
 ./run_pipeline.sh 09b_heightmap_raster.sh
 ```
+
+***
 
 ## Previous Step
 

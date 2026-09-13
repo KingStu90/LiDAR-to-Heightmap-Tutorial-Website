@@ -2,13 +2,19 @@
 
 ### Overview
 
+***
+
 - This step combines several GDAL processing operations.
    
 - The **values used** throughout the commands are **specific to this tutorial example** and BeamNG.drive.
   
 ### Instructions
 
+***
+
 #### 1) Scaling the Basemap
+
+***
 
 For this step we will need the original dimensions of `heightmap_MERGED.tif` from **Step 10**.
 
@@ -57,6 +63,8 @@ For **aerial and satellite imagery**, these resampling methods are good options:
 
 #### 2) Cropping the Basemap
 
+***
+
 ```text
 Heightmap crop:  x=100, y=50, width=1024, height=1024
                        ↓ ×2
@@ -87,6 +95,8 @@ echo "Finished: $output_file"
 
 #### 3) Convert from `.tif` to `.png`
 
+***
+
 **Outputs the final basemap**. Replace `buttonwillow` with your own name.
 
 ```bash
@@ -110,6 +120,8 @@ docker run --rm \
 
 echo "Finished: $output_file"
 ```
+
+***
 
 ## Previous Step
 

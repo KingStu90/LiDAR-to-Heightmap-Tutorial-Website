@@ -2,6 +2,8 @@
 
 ### Overview
 
+***
+
 **A)** **Recommended Workflow**
 
 **Merging the point clouds before rasterization helps prevent artifacts** in the final heightmap, such as visible lines where individual tiles meet.
@@ -26,6 +28,8 @@ Step 9c: Merging Individual Raster Tiles
 Step 10: Finalize Heightmap
 ```
 
+***
+
 ### Instructions
 
 #### Native Execution 
@@ -46,6 +50,8 @@ echo "Finished: heightmap_MERGED.laz"
 ```bash
 ./run_pipeline.sh 09a_heightmap_merge_laz.sh
 ```
+
+***
 
 ## Previous Step
 

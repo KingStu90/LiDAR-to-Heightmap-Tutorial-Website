@@ -2,6 +2,8 @@
 
 ### Overview
 
+***
+
 There are many ways to obtain satellite or aerial imagery for colorizing point clouds. For this tutorial, I will focus on downloading imagery from the **National Oceanic and Atmospheric Administration** (NOAA) [**Data Access Viewer**](https://coast.noaa.gov/dataviewer/#/imagery/search).  
 
 My original method for downloading imagery was through **QGIS**. However, this method is a little more complex and tedious. Instead of going in-depth, I will direct you to the tutorial I learned from [**Point Clouds and Blender by Emory Beck**](https://www.maphustle.co.nz/blogs/pc-blender), and add just a few tips of my own.
@@ -39,6 +41,8 @@ For downloading imagery outside the U.S., I will only briefly cover the QGIS met
 
 ### Instructions
 
+***
+
 #### NOAA Download Method
 
 <div align="center">
@@ -57,6 +61,8 @@ For downloading imagery outside the U.S., I will only briefly cover the QGIS met
 
 >[!NOTE]
 >To find out which **Projection and Datum Options** to select, use `pdal info --summary` on the `.laz` file. The output will be a huge wall of text and may be overwhelming at first. Look for the **EPSG code** located here (**A**). Once you have the EPSG code, enter it into [**EPSG.io**](https://epsg.io/6424) to make the information easier to read. On the EPSG.io page, scroll down to **Export** and select the **ESRI WKT** tab.
+
+***
 
 <div align="center">
   <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/02e_pdal_info.webp" 
@@ -81,6 +87,8 @@ docker run --rm \
    pdal info 02_data/01_download/s60975w23650.laz --summary
 ```
 
+***
+
 #### QGIS Download Method
 
 <div align="center">
@@ -100,6 +108,8 @@ docker run --rm \
 **D)** **Select the point-cloud tile from the "Calculate from" menu.** QGIS will then download imagery covering exactly the same area as the point cloud.
   
 **E)** **Higher DPI produces a higher-resolution exported image, with more pixels covering the same area.** This gives the point cloud, which is often denser than the imagery, more detailed color information to sample from. This usually results in a sharper-looking basemap. ***NOTE: There is a limit for the download file size on some servers, and the imagery may be blank if the download exceeds this limit***.
+
+***
 
 ## Previous Step
 
