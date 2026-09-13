@@ -63,8 +63,6 @@
   </tr>
 </table>
 
-***
-
 <div align="center">
   <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/03e_gdalinfo.webp" 
   alt="GDAL info terminal output"
