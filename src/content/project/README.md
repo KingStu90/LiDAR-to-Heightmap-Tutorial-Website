@@ -58,15 +58,15 @@ My goal with this tutorial is to **provide a reproducible workflow** while intro
 
 ## What This Tutorial Does
 
-The part I found most frustrating was spending so much time **manually recreating things that were already present in LiDAR data**. Manually placing trees was especially time-consuming, and using roads as a method to smooth the terrain didn't seem like the ideal way to create a track that was accurate to real life. It is very difficult to preserve the original camber and elevation when manually modifying the terrain.
+The part I found most frustrating was spending so much time **manually recreating things that were already contained in the LiDAR data**. Manually placing trees was especially time-consuming, and using roads as a method to smooth the terrain didn't seem like the ideal way to create a track that was accurate to real life. It is very difficult to preserve the original camber and elevation when manually modifying the terrain.
 
-Discovering the [**Biome Tool**](https://documentation.beamng.com/world_editor/tools/biome_tool/) in the World Editor was the **starting point for this project**. It allows you to place objects and vegetation based on a grayscale mask. After experimenting with different LiDAR processing software, **I developed a repeatable method for extracting tree locations from LiDAR data and creating a tree placement map**  that could be used with the Biome Tool ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/13-isolating-trees/)). 
+Discovering the [**Biome Tool**](https://documentation.beamng.com/world_editor/tools/biome_tool/) in the World Editor was the **starting point for this project**. It allows you to place objects and vegetation using a grayscale mask. After experimenting with different LiDAR processing software, **I developed a repeatable method for extracting tree locations from LiDAR data and creating a tree placement map** that could be used with the Biome Tool ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/13-isolating-trees/)). 
 
 **I also needed a way to reduce the force-feedback noise without manually smoothing the terrain.** My solution was to scale the LiDAR data to **50%** before generating the heightmap, and then return the terrain back to its original scale in the BeamNG World Editor ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/08-scale-50/)).
 
 **Finally, I wanted to eliminate the need to hand-paint the terrain**. The main problem I encountered when using imagery such as Google Maps for a basemap was that the imagery and heightmap could become increasingly misaligned over a large area. **To solve this, I colorize the point cloud with the imagery and then create the basemap from the colorized point cloud** ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/11-creating-the-basemap-cloudcompare/)).
 
-One ***potential*** way this project could be expanded is by using **LiDAR data to place material layers** (*grass, dirt, asphalt, etc.*). I know that the World Editor can **export layer maps** for each material (*shown below*). I haven't figured out a way to import layer maps, but depending on the dataset, it **may be possible to extract information from LiDAR data that could be used to paint different materials**.
+One ***potential*** way this project could be expanded is by using **LiDAR data to place material layers** (grass, dirt, asphalt, etc.). The World Editor can **export layer maps** for individual materials (*shown below*), but I haven't figured out a way to import them. Depending on the dataset, however, it **may be possible to extract information from LiDAR data that could be used to automatically create material masks**.
 
 <figure style="text-align: center; margin: auto;">
   <img
@@ -95,9 +95,9 @@ One ***potential*** way this project could be expanded is by using **LiDAR data
 
 ## Why I Made This
 
-I originally got interested in making **a track from LiDAR data** a couple of years ago after coming across this [**tutorial**](https://assettocorsamods.net/threads/track-building-series.1796/) for Assetto Corsa. Following the tutorial, I managed to get some roads imported into the driving sim. However, **the majority of the actual map creation was done in Blender**, and I didn't have the time or motivation to learn Blender just to drive around a local track.
+I originally got interested in making **a track from LiDAR data** a couple of years ago after coming across this [**tutorial**](https://assettocorsamods.net/threads/track-building-series.1796/) for Assetto Corsa. Following the tutorial, I managed to get some roads imported into the simulator. However, **the majority of the actual map creation was done in Blender**, and I didn't have the time or motivation to learn Blender just to drive around a local track.
 
-Fast forward to this year: I made the switch to Linux, and BeamNG.drive is one of the few driving sims I own that is supported on Linux, so it became my main driving sim. After finding out that BeamNG has its own **World Editor, where you can do the map building in-game**, I decided to take another go at making a map from LiDAR data. With the help of this [**tutorial**](https://www.beamng.com/threads/tutorial-level-building-with-lidar.39370/), I got a heightmap made and imported into the World Editor. After **spending 100+ hours** on my first map (*shown below*), manually placing the roads and trees, and hand-painting all the terrain, **the map was still far from finished**. 
+Fast forward to this year: I made the switch to Linux, and BeamNG.drive is one of the few driving sims I own that is supported on Linux, so it became my main driving sim. After finding out that BeamNG has its own **World Editor, which allows you to build maps in-game**, I decided to take another shot at making a map from LiDAR data. With the help of this [**tutorial**](https://www.beamng.com/threads/tutorial-level-building-with-lidar.39370/), I managed to create a heightmap and import it into the World Editor. After **spending 100+ hours** on my first map (*shown below*), manually placing the roads and trees, and hand-painting all the terrain, **the map was still far from finished**. 
 
 <table>
   <tr>
@@ -145,7 +145,7 @@ Fast forward to this year: I made the switch to Linux, and BeamNG.drive is one o
 >[!IMPORTANT]
 >All of the steps in the tutorial provide a “**Native Execution**” command which **requires the user to have the program used by that step installed on their PC**.
 >
->There is also a “**Docker Execution**” command which requires **Docker**. The advantage of using Docker is that all the programs and their dependencies are installed in a self-contained environment, **so you don’t have to install and configure each program separately**.
+>There is also a “**Docker Execution**” command which requires **Docker**. The advantage of using Docker is that the programs and dependencies used by the Docker workflow are installed in a self-contained environment, **so you don’t have to install and configure each program separately**.
 
 ### Native Execution
 
@@ -159,11 +159,11 @@ The native workflow requires the software used by each step to be installed on y
 
 - [**GDAL**](https://gdal.org/en/stable/download.html) (*Required*) - Geospatial raster and vector data library
 
-- [**Miniconda**](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) (*Highly Recommended)* - Used to install the dependencies required by PDAL and GDAL 
+- [**Miniconda**](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) (*Highly Recommended)* - Recommended package manager for installing PDAL, GDAL, and their dependencies 
 
 - [**QGIS**](https://www.qgis.org/download/) (*Recommended*) - Desktop GIS and mapping software
 
-- [**GIMP**](https://www.gimp.org/downloads/) or **Photoshop** - (*Highly Recommended*) - Image editor 
+- [**GIMP**](https://www.gimp.org/downloads/) - (*Highly Recommended*) - Image editor 
 
 - [**LAStools**](https://rapidlasso.de/downloads/) (*Optional*) - LiDAR processing software with a mix of **free and paid tools**. Alternative method for merging large datasets
 
@@ -171,9 +171,12 @@ The native workflow requires the software used by each step to be installed on y
 
 ### Docker Execution
 
+*The Docker workflow is primarily intended for Linux users. Docker Desktop can run Linux containers on Windows using WSL 2, but this tutorial does not currently provide Windows-specific Docker instructions or test the Docker workflow on Windows.*
+
 The repository also includes a Docker workflow that packages the required processing environment into a container.
 
-**Docker** - [**Download link**](https://www.docker.com/get-started/)
+If you want to use the Docker workflow, install Docker first:
+[**Download Docker**](https://www.docker.com/get-started/)
 
 After installing Docker, build the image from the project directory:
 
@@ -220,7 +223,7 @@ I enjoy building things, figuring out how they work, and finding ways to solve p
 
 When I first started working with LiDAR data, my goal was simply to create a heightmap for a BeamNG.Drive map. I saw this project as a way to give something back to the modding and open-source communities that I've benefited from over the years. As I built the project, I realized how much I enjoyed working with LiDAR data. I found it interesting how much information could be extracted from a single dataset and how that information could be used to solve different problems. Rather than manually deciding where things like trees should go or how terrain should be shaped, I found it much more interesting to figure out how the data could make those decisions for me.
 
-My interest in LiDAR also connects with my interest in drones. I originally got my Part 107 License to do FPV filming. While I enjoyed building and flying drones, I found that the artistic side of planning shots and editing footage wasn't as interesting to me as experimenting with different drone builds. Discovering the GIS field and learning to build pipelines to process LiDAR data has given me another way to explore my interest in drones beyond filming.
+My interest in LiDAR also connects with my interest in drones. I originally got my Part 107 license to do FPV filming. While I enjoyed building and flying drones, I found that the artistic side of planning shots and editing footage wasn't as interesting to me as experimenting with different drone builds. Discovering the GIS field and learning to build pipelines to process LiDAR data has given me another way to explore my interest in drones beyond filming.
 
 *Disclaimer: This project has been a great experience in **learning to write and understand code**. The majority of the scripts were written using the free ChatGPT model. **However, it took considerable planning, modifying, and testing to get this tutorial to work with multiple workflows**. I have purposely kept the "Native Execution" commands as simple as possible to help other non-technical users understand what the script is accomplishing*.
 
