@@ -46,7 +46,7 @@ As shown in the photos below, **PDAL IDW** interpolation **is not able to fill 
 
 
 >[!NOTE]
->We are using `GRID_STEP 0.5` to create a **higher-resolution intermediate raster** before **downsampling in Step 12**.
+>We are using `GRID_STEP 0.5` to create a **higher-resolution intermediate raster** before **downsampling** in *Step 12*.
 >
 >This allows more of the color variation from the point cloud to be represented before the final resampling step. When resampled with Lanczos, **this additional detail can then be used when calculating the final pixels, generally producing a sharper-looking basemap**.
 
@@ -92,7 +92,7 @@ done
 
 #### Step 11b: Merging the Basemap
 
-For merging **imagery raster tiles**, the following settings are **recommended defaults** for this workflow and should not normally need to be changed.
+- For merging **imagery raster tiles**, the following settings are **recommended defaults** for this workflow and should not normally need to be changed.
 
 #### Native Execution
 
