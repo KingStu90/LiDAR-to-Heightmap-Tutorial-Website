@@ -66,7 +66,7 @@ The **PDAL pipeline** below defines **how the point cloud is rasterized**. The
 
 **Bash Scripts**
 
-Choose **1 Tile** if you have limited RAM. Choose **4 Tiles** to process **four tiles in parallel**, which can significantly increase memory usage.
+Choose **1 Tile** if you have limited RAM. Choose **4 Tiles** to process **four tiles in parallel**, which increases memory usage.
 
 **Native Execution - 1 Tile**
 
