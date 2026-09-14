@@ -8,7 +8,7 @@
   
 - Having access to QGIS and GIMP can make this process easier.
   
-- The **values used** throughout the commands are **specific to this tutorial example** and BeamNG.drive.
+- The values used throughout the commands are **specific to this tutorial example** and BeamNG.drive.
   
 - BeamNG.drive supports map sizes `512x512`, `1024x1024`, `2048x2048`, `4096x4096`, `8192x8192`.
 
