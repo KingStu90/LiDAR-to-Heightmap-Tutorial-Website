@@ -52,7 +52,7 @@
 
 - List of Federal, State, County, City, etc ArcGIS Servers **Curated by Joseph Elfelt**
 
-  [**https://mappingsupport.com/p/surf_gis/list-federal-state-county-city-GIS-servers.pdf**](https://mappingsupport.com/p/surf_gis/list-federal-state-county-city-GIS-servers.pdf)
+  - [**https://mappingsupport.com/p/surf_gis/list-federal-state-county-city-GIS-servers.pdf**](https://mappingsupport.com/p/surf_gis/list-federal-state-county-city-GIS-servers.pdf)
 
 ***
 
