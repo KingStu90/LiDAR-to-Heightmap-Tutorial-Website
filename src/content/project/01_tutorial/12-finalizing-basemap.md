@@ -63,13 +63,13 @@ For **aerial and satellite imagery**, these resampling methods are good options:
 
 #### 2) Cropping the Basemap
 
-- The basemap crop values are also 2x the heightmap crop values if the point cloud was scaled to 50%.
-
 ```text
 Heightmap crop:  x=100, y=50, width=1024, height=1024
                        ↓ ×2
 Basemap crop:    x=200, y=100, width=2048, height=2048
 ```
+
+- The basemap crop values are also 2x the heightmap crop values if the point cloud was scaled to 50%.
 
 ```bash
 #!/bin/bash
