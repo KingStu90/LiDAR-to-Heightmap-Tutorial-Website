@@ -4,16 +4,22 @@
 
 ### Overview
 
-- This script is set up to work with both workflows: the **recommended workflow** and the **large-project alternative workflow**. 
+- **This script is set up to work with both workflows**: the recommended workflow and the large-project alternative workflow. 
   
-- Recommended Workflow: **Step 9a → Step 9b → Step 10**
+- **Recommended Workflow**: *Step 9a → Step 9b → Step 10*
   
-- Large-Project Alternative Workflow: **Step 9b → Step 9c → Step 10**
+- **Large-Project Alternative Workflow**: *Step 9b → Step 9c → Step 10*
   
 >[!NOTE]
->When I say "**CloudCompare Interpolate**", I am referring to the "**Interpolate**" option in CloudCompare, which relies on Delaunay triangulation.
+>When I say "*CloudCompare Interpolate*", I am referring to the "**Interpolate**" option in CloudCompare, which relies on Delaunay triangulation.
 
-In general, I find CloudCompare **Kriging** to produce a **sharper raster** than CloudCompare **Interpolate**. However, as shown below, when there are "**nodata**" or **empty spaces** along the edge of the dataset, CloudCompare **Interpolate may produce a more desirable raster**.
+In general, I find CloudCompare **Kriging** to produce a sharper raster than CloudCompare **Interpolate**. 
+
+However, as shown below, when there are "*nodata*" or *empty spaces* along the edge of the dataset, CloudCompare **Interpolate may produce a more desirable raster**.
+
+*Note*: As shown with CloudCompare Interpolate, the black areas represent *nodata* and are not **real elevation data**.<br>
+When the resulting raster is read by software such as GDAL or QGIS, these *nodata* areas may be interpreted as a value of 0, causing the minimum elevation to be incorrect. This means the height range used to create the heightmap will not be accurate.<br> 
+It is possible to replace the *nodata* areas with the **minimum elevation** with `gdal_calc.py`, but this is out of the scope of this tutorial and is not covered.
 
 <table>
   <tr>
@@ -42,7 +48,7 @@ In general, I find CloudCompare **Kriging** to produce a **sharper raster** than
 
 ***
 
-CloudCompare Interpolate CLI Command: `EMPTY_FILL INTERP`
+**CloudCompare Interpolate CLI Command**: `EMPTY_FILL INTERP`
 
 For creating the raster tiles for **heightmaps** , the remaining settings are **recommended defaults** for this workflow and should not normally need to be changed.
 
