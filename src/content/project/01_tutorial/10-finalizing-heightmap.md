@@ -6,7 +6,7 @@
 
 - This step combines several GDAL processing operations.
   
-- Having access to **QGIS** and **GIMP** can make this process easier, ***but they are not required***.
+- Having access to **QGIS** and **GIMP** can make this process easier.
   
 - The **values used** throughout the commands are **specific to this tutorial example** and BeamNG.drive.
   
@@ -16,7 +16,7 @@
 
 ### Instructions
 
-*If running GDAL natively, remove the following Docker-specific code from each command:*
+***If running GDAL natively, remove the following Docker-specific code from each command:***
 
 ```bash
 docker run --rm \
@@ -123,7 +123,7 @@ echo "Finished: $output_file"
 > [!IMPORTANT]
 > If you are following my process of scaling the point cloud to 50%, the **X, Y, and Z dimensions are all reduced by 50%**.
 >
-> Setting `Meters per Pixel` to **2** in BeamNG.drive **restores the horizontal (X/Y) scale** but does **not** affect the **height (Z-axis)**. The height must therefore be **manually scaled by 2x to restore the original elevation**.
+> Setting `Meters per Pixel` to *2* in BeamNG.drive **restores the horizontal** (*X/Y*) **scale** but does **not** affect the **height** (*Z-axis*). The height must therefore be **manually scaled by 2x to restore the original elevation**.
 >
 >*Scaled Height (50%) = 9.457 m*<br>
 >*Actual Height (2x) = 18.914 m*
@@ -152,7 +152,7 @@ echo "Finished: $output_file"
 ```
 
 >[!WARNING]  
->The original heightmap **should not be resized or resampled in a image editor** if it is being used as elevation data. Changes to the pixel values can alter the resulting terrain. 
+>I recommend that the original heightmap **not be resized or resampled in a image editor** if it is being used as elevation data. Changes to the pixel values can alter the resulting terrain. 
 >
 >**Heightmap modifications** may be appropriate for **visual purposes**, such as generating normal maps or other PBR textures.
 
