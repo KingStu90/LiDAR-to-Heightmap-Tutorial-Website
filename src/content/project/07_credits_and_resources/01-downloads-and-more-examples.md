@@ -48,7 +48,7 @@
 
 <h2>Heightmap Import Settings</h2>
 
-<img src="LiDAR-to-Heightmap-Tutorial-Website/photos/19_beamng_import_settings.webp" alt="Heightmap Import Settings">
+<img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/19_beamng_import_settings.webp" alt="Heightmap Import Settings">
 
 <p><em>Swing Arm City, UT</em></p>
 
