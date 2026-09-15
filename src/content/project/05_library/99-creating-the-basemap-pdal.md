@@ -66,7 +66,7 @@ Look for the **Red**, **Green**, and **Blue** values in the output. The `ma
 
 **B) Bash Scripts**
 
-Choose **1 Tile** if you have limited RAM. Choose **4 Tiles** to process **four tiles in parallel**, which increases memory usage.
+- Choose **1 Tile** if you have limited RAM. Choose **4 Tiles** to process **four tiles in parallel**, which increases memory usage.
 
 **Native Execution - 1 Tile**
 
