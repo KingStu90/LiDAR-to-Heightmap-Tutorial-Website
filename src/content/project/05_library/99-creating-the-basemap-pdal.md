@@ -36,7 +36,7 @@ Look for the **Red**, **Green**, and **Blue** values in the output. The `ma
 
 #### 2) Basemap Rasterization
 
-The **PDAL pipeline** below defines **how the point cloud is rasterized**. The **Bash script** then runs this pipeline for each point-cloud file.
+- The **PDAL pipeline** below defines **how the point cloud is rasterized**. The **Bash script** then runs this pipeline for each point-cloud file.
 
 **A) PDAL Pipeline**
 
