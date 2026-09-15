@@ -72,7 +72,7 @@ echo "Finished: $output_file"
 
 
 
-***QGIS Method***
+- ***QGIS Method***
 
 <div style="text-align: center;">
   <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/10b_convert_16bit_qgis.webp" 
@@ -81,7 +81,7 @@ echo "Finished: $output_file"
   <em>Note: QGIS may display slightly different min/max values than gdalinfo -mm</em>
 </div>
 
-***GDAL Method***
+- ***GDAL Method***
 
 ```bash
 docker run --rm \
@@ -93,6 +93,8 @@ docker run --rm \
 ```
 
 **B) Convert to 16-Bit**
+
+- `scale` rescales the minimum and maximum elevations to fit the full 0–65,535 range.
 
 ```bash
 #!/bin/bash
