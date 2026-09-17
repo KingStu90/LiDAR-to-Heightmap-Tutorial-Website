@@ -50,7 +50,13 @@
 		viewer.loadSettingsFromURL();
 		viewer.setBackground("skybox");
 		
-		viewer.setDescription(`Point cloud courtesy of <a href="https://www.pix4d.com/de/">Pix4D</a>.`);
+		viewer.setDescription(`
+	LiDAR data: <a href="https://lidarportal.dnr.wa.gov/" target="_blank" rel="noopener noreferrer">
+	Washington State Department of Natural Resources</a>.<br>
+	Imagery: <a href="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer" target="_blank" rel="noopener noreferrer">
+	Esri World Imagery</a>.<br>
+	Sources: Esri, Vantor, Earthstar Geographics, and the GIS User Community.
+`);
 		
 		viewer.loadGUI(() => {
 			viewer.setLanguage('en');
