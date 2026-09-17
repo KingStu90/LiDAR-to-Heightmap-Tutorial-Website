@@ -76,23 +76,15 @@
 
     		scene.addPointCloud(pointcloud);
 
-    		viewer.fitToScreen();
+        	scene.addPointCloud(pointcloud);
 
-    		let box = pointcloud.boundingBox;
-    		let center = box.getCenter(new THREE.Vector3());
+        	viewer.fitToScreen();
 
-    		let size = box.getSize(new THREE.Vector3());
-    		let height = Math.max(size.x, size.y);
-
-    		scene.view.setView(
-        		new THREE.Vector3(
-            		center.x,
-            		center.y,
-            		box.max.z + height
-        		),
-        		center
-    		);
-		});
+        	console.log("Camera:", scene.getActiveCamera().position);
+        	console.log("View position:", scene.view.position);
+        	console.log("View pivot:", scene.view.getPivot());
+    	}
+	);
 
 	</script>
 	
