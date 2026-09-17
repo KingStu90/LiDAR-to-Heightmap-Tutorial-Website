@@ -18,7 +18,7 @@ For downloading imagery outside the U.S., I will only briefly cover the QGIS met
     <td align="center" width="50%">
       <strong>Downloaded through QGIS</strong><br>
       <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/02a_esri_basemap.webp" 
-      alt="ESRI imagery"
+      *Esri World Imagery — [Esri World Imagery service](https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer).*
       width="80%"><br>
       <strong>Environmental Systems Research Institute (ESRI)</strong><br>
       Commercially Licensed Imagery<br>
