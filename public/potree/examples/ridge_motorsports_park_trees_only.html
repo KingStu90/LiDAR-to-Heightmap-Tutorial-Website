@@ -74,30 +74,14 @@
     		material.shape = Potree.PointShape.SQUARE;
     		material.activeAttributeName = "rgba";
 
-    		scene.addPointCloud(pointcloud);
+			scene.addPointCloud(pointcloud);
 
         	viewer.fitToScreen();
 
-        	let target = scene.view.getPivot();
-
-        	let camera = scene.getActiveCamera();
-
-        	let distance = camera.position.distanceTo(target);
-
-        	scene.view.setView(
-            	[
-                	target.x,
-                	target.y,
-                	target.z + distance
-            	],
-            	[
-                	target.x,
-                	target.y,
-                	target.z
-            	]
-        	);
+        	viewer.setTopView();
     	}
 	);
+		
 	</script>
 	
 	
