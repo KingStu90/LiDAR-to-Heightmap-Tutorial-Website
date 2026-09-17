@@ -76,16 +76,28 @@
 
     		scene.addPointCloud(pointcloud);
 
-        	scene.addPointCloud(pointcloud);
-
         	viewer.fitToScreen();
 
-        	console.log("Camera:", scene.getActiveCamera().position);
-        	console.log("View position:", scene.view.position);
-        	console.log("View pivot:", scene.view.getPivot());
+        	let target = scene.view.getPivot();
+
+        	let camera = scene.getActiveCamera();
+
+        	let distance = camera.position.distanceTo(target);
+
+        	scene.view.setView(
+            	[
+                	target.x,
+                	target.y,
+                	target.z + distance
+            	],
+            	[
+                	target.x,
+                	target.y,
+                	target.z
+            	]
+        	);
     	}
 	);
-
 	</script>
 	
 	
