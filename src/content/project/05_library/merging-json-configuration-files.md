@@ -22,7 +22,7 @@ For example,
 
 2) Save the Python code in a **text document** in **the same folder** as the `.json` files and save it as a `.py`. 
    
-	*For example*:
+	For example:
 	
 	`combine_forestitems.py`
 
