@@ -1,4 +1,4 @@
-## Python Script for Merging JSON Configuration Files
+## Merging JSON Configuration Files
 
 This Python script combines multiple `.json` configuration files from different developer maps into a **single combined** `.json` **file** that can be used in your own project. 
 
