@@ -64,24 +64,25 @@
 			viewer.toggleSidebar();
 		});
 		
-		// Load and add point cloud to scene
 		Potree.loadPointCloud("../pointclouds/ridge_motorsports_park_trees_only_converted/metadata.json", "", e => {
 			let scene = viewer.scene;
-			let pointcloud = e.pointcloud;
-			
-			let material = pointcloud.material;
-			material.size = 0.1;
-			material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
-			material.shape = Potree.PointShape.SQUARE;
-			material.activeAttributeName = "rgba";
-			
-			scene.addPointCloud(pointcloud);
+    		let pointcloud = e.pointcloud;
 
-		    let box = pointcloud.boundingBox;
+    		let material = pointcloud.material;
+    		material.size = 0.1;
+    		material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
+    		material.shape = Potree.PointShape.SQUARE;
+    		material.activeAttributeName = "rgba";
+
+    		scene.addPointCloud(pointcloud);
+
+    		viewer.fitToScreen();
+
+    		let box = pointcloud.boundingBox;
     		let center = box.getCenter(new THREE.Vector3());
 
     		let size = box.getSize(new THREE.Vector3());
-   			let height = Math.max(size.x, size.y);
+    		let height = Math.max(size.x, size.y);
 
     		scene.view.setView(
         		new THREE.Vector3(
