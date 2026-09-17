@@ -44,7 +44,7 @@ U.S. Geological Survey, 2026, 3D Elevation Program Lidar Point Cloud, OR_SouthEa
 
 - **Imagery**
 
-U.S. Geological Survey, USGS NAIP Imagery, accessed July 10, 2026 at URL [**https://imagery.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer**](https://imagery.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer)
+U.S. Geological Survey, USGS NAIP Imagery, accessed July 10, 2026 at URL [**https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer**](https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer)
 
 #### 5) El Capitan - California
 
@@ -54,7 +54,7 @@ U.S. Geological Survey, 2021, 3D Elevation Program Lidar Point Cloud, CA_Yosemit
 
 - **Imagery**
 
-U.S. Geological Survey, USGS NAIP Imagery, accessed June 18, 2026 at URL [**https://imagery.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer**](https://imagery.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer)
+U.S. Geological Survey, USGS NAIP Imagery, accessed June 18, 2026 at URL [**https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer**](https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer)
 
 #### 6) Ridge Motorsports Park - Washington
 
@@ -64,7 +64,7 @@ Washington Geological Survey, 2025, Mason County Refresh24 2025 project \[lidar 
 
 - **Imagery**
 
-U.S. Geological Survey, USGS NAIP Imagery, accessed July 28, 2026 at URL [**https://imagery.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer**](https://imagery.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer)
+U.S. Geological Survey, USGS NAIP Imagery, accessed July 28, 2026 at URL [**https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer**](https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer)
 
 ***
 
