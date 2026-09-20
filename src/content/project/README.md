@@ -243,7 +243,7 @@ When I first started working with LiDAR data, my goal was simply to create a hei
 
 My interest in LiDAR also connects with my interest in drones. I originally got my Part 107 license to do FPV filming. While I enjoyed building and flying drones, I found that the artistic side of planning shots and editing footage wasn't as interesting to me as experimenting with different drone builds. Discovering the GIS field and learning to build pipelines to process LiDAR data has given me another way to explore my interest in drones beyond filming.
 
-*Disclaimer: This project has been a valuable experience in learning to write, understand, and apply code to real-world GIS workflows. I used the free version of ChatGPT to help with the majority of the scripts. **However, it took considerable planning, modifying, and testing to ensure they worked across multiple use cases**. I have intentionally kept the “Native Execution” commands as simple and transparent as possible so that users with limited programming experience can understand what each script is doing.*
+*Disclaimer: This project has been a valuable experience in learning to write, understand, and apply code to real-world GIS workflows. I used the free version of ChatGPT to help with the majority of the scripts. **However, it took considerable planning, modifying, and testing to ensure they worked across multiple use cases**. I did my best to provide links to any background information for each step and I have intentionally kept the “Native Execution” commands as simple as possible so that users with limited programming experience can modify the existing script without the help of a.i.*
 
 ***
 
