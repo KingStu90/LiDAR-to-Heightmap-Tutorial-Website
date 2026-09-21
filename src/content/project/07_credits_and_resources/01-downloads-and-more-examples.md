@@ -122,9 +122,6 @@ Map size: 4096 x 4096
 
 - Max Height: 237.5 m
 
->[!NOTE]
->I originally made this for **Cities: Skylines**, which reduces an 18 km × 18 km area to a 1081 × 1081 heightmap, so much of the fine detail is lost. I found that the results weren't worth the effort of downloading and processing hundreds of point cloud tiles.
-
 <div class="image-grid"> <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_eureka_dunes_scaled_1.webp" alt="Eureka Dunes 1:4 scale in-game screenshot">
 <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/99_eureka_dunes_scaled_2.webp" alt="Eureka Dunes 1:4 scale in-game screenshot">
 
