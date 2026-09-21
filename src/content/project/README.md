@@ -56,9 +56,7 @@ The complete project files, scripts, and example data used in this tutorial 
 
 ### Who This Is For
 
-**I did my best to write this tutorial for the person I was when I started**. Because of this, the tutorial is fairly in-depth. There are tutorials about Geographic Information Systems (GIS) and processing LiDAR data, but it can be difficult to know what to search for when you don't know the basic terminology. 
-
-My goal with this tutorial is to **provide a reproducible workflow** while introducing the GIS concepts along the way. This is **not intended to be the definitive way** to process LiDAR data. It is the workflow that worked for me, and different datasets may require different tools, settings, or approaches. The tutorial provides downloadable example data so you can follow along step-by-step, while also showing how the same workflow and code can be adapted to your own project.
+My goal with this tutorial is to provide a reproducible workflow while introducing the GIS concepts along the way. This is **not intended to be the definitive way** to process LiDAR data. It is the workflow that worked for me, and different datasets may require different tools, settings, or approaches. The tutorial provides **downloadable example data so you can follow along step-by-step**, while also showing how the same workflow and code can be adapted to your own project.
 
 ***
 
@@ -132,14 +130,14 @@ I also needed a way to **reduce the force-feedback noise without manually smooth
 
 ***
 
-### Requirements
+### Software Requirements
 
 >[!IMPORTANT]
 >All of the steps in the tutorial provide a “**Native Execution**” command which **requires the user to have the program used by that step installed on their PC**.
 >
 >There is also a “**Docker Execution**” command which requires **Docker**. The advantage of using Docker is that the programs and dependencies used by the Docker workflow are installed in a self-contained environment, **so you don’t have to install and configure each program separately**.
 
-### Native Execution
+### Native Execution - Software Requirements
 
 All of the software used in the tutorial is listed below and is free to download.
 
@@ -161,7 +159,7 @@ All of the software used in the tutorial is listed below and is free to dow
 
 *Depending on your operating system and what dependencies are installed, you may need to do some troubleshooting to get all the programs working correctly*.
 
-### Docker Execution
+### Docker Execution - Software Requirements
 
 *The Docker workflow is primarily intended for Linux users. Docker Desktop can run Linux containers on Windows using WSL 2, but this tutorial does not currently provide Windows-specific Docker instructions and I have not tested the Docker workflow on Windows.*
 
