@@ -99,9 +99,9 @@ My goal with this tutorial is to provide a reproducible workflow while introduci
   </tr>
 </table>
 
-[**Ground-Only: Potree Interactive Viewer**](https://kingstu90.github.io/LiDAR-to-Heightmap-Tutorial-Website/potree/examples/ridge_motorsports_park_ground_only_subsample.html)
+[**Ground-only: Web Interactive Viewer**](https://kingstu90.github.io/LiDAR-to-Heightmap-Tutorial-Website/potree/examples/ridge_motorsports_park_ground_only_subsample.html)
 
-[**Tree-Only: Potree Interactive Viewer**](https://kingstu90.github.io/LiDAR-to-Heightmap-Tutorial-Website/potree/examples/ridge_motorsports_park_trees_only.html)
+[**Trees-only: Web Interactive Viewer**](https://kingstu90.github.io/LiDAR-to-Heightmap-Tutorial-Website/potree/examples/ridge_motorsports_park_trees_only.html)
 
 The part I found most frustrating was spending so much time **manually recreating things that were already contained in the LiDAR data**. Manually placing trees was especially time-consuming, and using roads as a method to smooth the terrain didn't seem like the ideal way to create a track that was accurate to real life. It is very difficult to preserve the original camber and elevation when manually modifying the terrain.
 
