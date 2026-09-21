@@ -56,9 +56,9 @@ The complete project files, scripts, and example data used in this tutorial 
 
 ### Who This Is For
 
-**I did my best to write this tutorial for the person I was when I started**. Because of this, the tutorial is fairly in-depth. There are a lot of tutorials about Geographic Information Systems (GIS) and processing LiDAR data, **but it can be difficult to know what to search for when you don't know the basic terminology**. 
+**I did my best to write this tutorial for the person I was when I started**. Because of this, the tutorial is fairly in-depth. There are tutorials about Geographic Information Systems (GIS) and processing LiDAR data, but it can be difficult to know what to search for when you don't know the basic terminology. 
 
-My goal with this tutorial is to **provide a reproducible workflow** while introducing the GIS concepts along the way. This is **not intended to be the definitive way** to process LiDAR data. It is the workflow that worked for me, and different datasets may require different tools, settings, or approaches. The tutorial provides **downloadable example data** so you can follow along **step-by-step**, while also showing how the **same workflow and code** can be adapted to your own project.
+My goal with this tutorial is to **provide a reproducible workflow** while introducing the GIS concepts along the way. This is **not intended to be the definitive way** to process LiDAR data. It is the workflow that worked for me, and different datasets may require different tools, settings, or approaches. The tutorial provides downloadable example data so you can follow along **step-by-step**, while also showing how the same workflow and code can be adapted to your own project.
 
 ***
 
@@ -66,17 +66,56 @@ My goal with this tutorial is to **provide a reproducible workflow** while intro
 
 The part I found most frustrating was spending so much time **manually recreating things that were already contained in the LiDAR data**. Manually placing trees was especially time-consuming, and using roads as a method to smooth the terrain didn't seem like the ideal way to create a track that was accurate to real life. It is very difficult to preserve the original camber and elevation when manually modifying the terrain.
 
-Discovering the [**Biome Tool**](https://documentation.beamng.com/world_editor/tools/biome_tool/) in the World Editor was the **starting point for this project**. It allows you to place objects and vegetation using a grayscale mask. After experimenting with different LiDAR processing software, **I developed a repeatable method for extracting tree locations from LiDAR data and creating a tree placement map** that could be used with the Biome Tool ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/13-isolating-trees/)). 
+<table>
+  <tr>
+    <th colspan="2" align="center">Initial Manual Approach (100+ hrs)</th>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/00_ridge_motorsports_park_1.webp"  
+      alt="Ridge Motorsports Park, WA — initial manual approach"
+      width="100%">
+    </td>
+    <td align="center" width="50%">
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/00_ridge_motorsports_park_3.webp" 
+      alt="Ridge Motorsports Park, WA — initial manual approach"
+      width="100%">
+    </td>
+  </tr>
+</table>
 
-For an additional way to explore the processed tree-only data, I created a web-based 3D point-cloud viewer using [**Potree Interactive Viewer**](https://kingstu90.github.io/LiDAR-to-Heightmap-Tutorial-Website/potree/examples/ridge_motorsports_park_trees_only.html)
+Discovering the [**Biome Tool**](https://documentation.beamng.com/world_editor/tools/biome_tool/) in the World Editor was the starting point for this project. It allows you to place objects and vegetation using a grayscale mask. After experimenting with different LiDAR processing software, **I developed a repeatable method for extracting tree locations from LiDAR data and creating a tree placement map** that could be used with the Biome Tool ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/13-isolating-trees/)). 
 
-**I also needed a way to reduce the force-feedback noise without manually smoothing the terrain.** My solution was to scale the LiDAR data to **50%** before generating the heightmap, and then return the terrain back to its original scale in the BeamNG World Editor ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/08-scale-50/)).
+*For an additional way to explore the processed tree-only data, I created a web-based 3D point-cloud viewer using* [**Potree Interactive Viewer**](https://kingstu90.github.io/LiDAR-to-Heightmap-Tutorial-Website/potree/examples/ridge_motorsports_park_trees_only.html)
 
-In addition, the ground-only processed data is also available as a subsampled point cloud in the [**Potree Interactive Viewer**](https://kingstu90.github.io/LiDAR-to-Heightmap-Tutorial-Website/potree/examples/ridge_motorsports_park_ground_only_subsample.html)
+<table>
+  <tr>
+    <th colspan="2" align="center">Final Results: Ridge Motorsports Park, WA</th>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/00_ridge_motorsports_park_5.webp" 
+      alt="Final Results: Ridge Motorsports Park, WA"
+      width="100%">
+    </td>
+    <td align="center" width="50%">
+      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/00_ridge_motorsports_park_6.webp" 
+      alt="Final Results: Ridge Motorsports Park, WA"
+      width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <em>Trees placed with BeamNG.drive Biome Tool</em>
+    </td>
+  </tr>
+</table>
 
-**Finally, I wanted to eliminate the need to hand-paint the terrain**. The main problem I encountered when using imagery such as Google Maps for a basemap was that the imagery and heightmap could become increasingly misaligned over a large area. **To solve this, I colorize the point cloud with the imagery and then create the basemap from the colorized point cloud** ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/11-creating-the-basemap-cloudcompare/)).
+I also needed a way to **reduce the force-feedback noise without manually smoothing the terrain.** My solution was to scale the LiDAR data to **50%** before generating the heightmap, and then return the terrain back to its original scale in the BeamNG World Editor ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/08-scale-50/)).
 
-One ***potential*** way this project could be expanded is by using **LiDAR data to place material layers** (grass, dirt, asphalt, etc.) similar to the [**layer-map**](https://community.bohemia.net/wiki/Layered_Terrain_Surface_Representation?useskin=darkvector&utm_source) approach used in the Arma series. The World Editor can **export layer maps** for individual materials (*shown below*), but I haven't figured if there is a way to import them. Depending on the dataset, however, it **may be possible to extract information from LiDAR data that could be used to automatically create material masks**. 
+*In addition, the ground-only processed data is also available as a subsampled point cloud in the* [**Potree Interactive Viewer**](https://kingstu90.github.io/LiDAR-to-Heightmap-Tutorial-Website/potree/examples/ridge_motorsports_park_ground_only_subsample.html)
+
+**Finally, I wanted to eliminate the need to hand-paint the terrain**. The main problem I encountered when using imagery such as Google Maps for a basemap was that the imagery and heightmap could become increasingly misaligned over a large area. To solve this, I colorize the point cloud with the imagery and then create the basemap from the colorized point cloud ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/11-creating-the-basemap-cloudcompare/)).
 
 <figure style="text-align: center; margin: auto;">
   <img
@@ -166,55 +205,6 @@ Individual processing scripts can then be run through Docker:
 
 ***
 
-### Why I Made This
-
-I originally got interested in making **a track from LiDAR data** a couple of years ago after coming across this [**tutorial**](https://assettocorsamods.net/threads/track-building-series.1796/) for Assetto Corsa. Following the tutorial, I managed to get some roads imported into the simulator. However, **the majority of the actual map creation was done in Blender**, and I didn't have the time or motivation to learn Blender just to drive around a local track.
-
-Fast forward to this year: I made the switch to Linux, and BeamNG.drive is one of the few driving sims I own that is supported on Linux, so it became my main driving sim. After finding out that BeamNG has its own **World Editor, which allows you to build maps in-game**, I decided to take another shot at making a map from LiDAR data. With the help of this [**tutorial**](https://www.beamng.com/threads/tutorial-level-building-with-lidar.39370/), I managed to create a heightmap and import it into the World Editor. After **spending 100+ hours** on my first map (*shown below*), manually placing the roads and trees, and hand-painting all the terrain, **the map was still far from finished**. 
-
-<table>
-  <tr>
-    <th colspan="2" align="center">Initial Manual Approach (100+ hrs)</th>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/00_ridge_motorsports_park_1.webp"  
-      alt="Ridge Motorsports Park, WA — initial manual approach"
-      width="100%">
-    </td>
-    <td align="center" width="50%">
-      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/00_ridge_motorsports_park_3.webp" 
-      alt="Ridge Motorsports Park, WA — initial manual approach"
-      width="100%">
-    </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th colspan="2" align="center">Final Results: Ridge Motorsports Park, WA</th>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/00_ridge_motorsports_park_5.webp" 
-      alt="Final Results: Ridge Motorsports Park, WA"
-      width="100%">
-    </td>
-    <td align="center" width="50%">
-      <img src="/LiDAR-to-Heightmap-Tutorial-Website/photos/00_ridge_motorsports_park_6.webp" 
-      alt="Final Results: Ridge Motorsports Park, WA"
-      width="100%">
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <em>Trees placed with BeamNG.drive Biome Tool</em>
-    </td>
-  </tr>
-</table>
-
-***
-
 ### Start Tutorial
 
 [**Step 1: Downloading LiDAR Data**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/01-downloading-point-cloud-data/) →
@@ -243,7 +233,7 @@ When I first started working with LiDAR data, my goal was simply to create a hei
 
 My interest in LiDAR also connects with my interest in drones. I originally got my Part 107 license to do FPV filming. While I enjoyed building and flying drones, I found that the artistic side of planning shots and editing footage wasn't as interesting to me as experimenting with different drone builds. Discovering the GIS field and learning to build pipelines to process LiDAR data has given me another way to explore my interest in drones beyond filming.
 
-*Disclaimer: This project has been a valuable experience in learning to write, understand, and apply code to real-world GIS workflows. I used the free version of ChatGPT to help with the majority of the scripts*. ***However, it took considerable planning, modifying, and testing to ensure they worked across multiple use cases. I did my best to provide links to any background information for each step and I have intentionally kept the “Native Execution” commands as simple as possible so that users with limited programming experience can hopefully modify the existing script without the help of a.i. for use with different projects***.
+*Disclaimer: This project has been a valuable experience in learning to write, understand, and apply code to real-world GIS workflows. I used the free version of ChatGPT to help with the majority of the scripts. However, it took considerable planning, modifying, and testing to ensure they worked across multiple use cases. I did my best to provide links to any background information for each step and I have intentionally kept the “Native Execution” commands as simple as possible so that users with limited programming experience can hopefully modify the existing script without the help of a.i. for use with different projects*.
 
 ***
 
