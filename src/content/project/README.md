@@ -52,7 +52,7 @@ The complete project files, scripts, and example data used in this tutorial 
   </tbody>
 </table>
 
-My goal with this tutorial is to provide a reproducible workflow while introducing the GIS concepts along the way. This is **not intended to be the definitive way** to process LiDAR data. It is the workflow that worked for me, and different datasets may require different tools, settings, or approaches. The tutorial provides **downloadable example data so you can follow along step-by-step**, while also showing how the same workflow and code can be adapted to your own project.
+My goal with this tutorial is to provide a reproducible workflow while introducing the GIS concepts along the way. This is **not intended to be the definitive way** to process LiDAR data. It is the workflow that worked for me, and different datasets may require different tools, settings, or approaches. The tutorial provides links to the **downloadable example data so you can follow along step-by-step**, while also showing how the same workflow and code can be adapted to your own project.
 
 ***
 
