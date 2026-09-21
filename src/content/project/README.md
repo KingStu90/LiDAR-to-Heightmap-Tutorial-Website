@@ -58,7 +58,7 @@ The complete project files, scripts, and example data used in this tutorial 
 
 **I did my best to write this tutorial for the person I was when I started**. Because of this, the tutorial is fairly in-depth. There are tutorials about Geographic Information Systems (GIS) and processing LiDAR data, but it can be difficult to know what to search for when you don't know the basic terminology. 
 
-My goal with this tutorial is to **provide a reproducible workflow** while introducing the GIS concepts along the way. This is **not intended to be the definitive way** to process LiDAR data. It is the workflow that worked for me, and different datasets may require different tools, settings, or approaches. The tutorial provides downloadable example data so you can follow along **step-by-step**, while also showing how the same workflow and code can be adapted to your own project.
+My goal with this tutorial is to **provide a reproducible workflow** while introducing the GIS concepts along the way. This is **not intended to be the definitive way** to process LiDAR data. It is the workflow that worked for me, and different datasets may require different tools, settings, or approaches. The tutorial provides downloadable example data so you can follow along step-by-step, while also showing how the same workflow and code can be adapted to your own project.
 
 ***
 
@@ -84,7 +84,7 @@ The part I found most frustrating was spending so much time **manually recreatin
   </tr>
 </table>
 
-Discovering the [**Biome Tool**](https://documentation.beamng.com/world_editor/tools/biome_tool/) in the World Editor was the starting point for this project. It allows you to place objects and vegetation using a grayscale mask. After experimenting with different LiDAR processing software, **I developed a repeatable method for extracting tree locations from LiDAR data and creating a tree placement map** that could be used with the Biome Tool ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/13-isolating-trees/)). 
+Discovering the [**Biome Tool**](https://documentation.beamng.com/world_editor/tools/biome_tool/) in the World Editor was the starting point for this project. It allows you to place objects and vegetation using a grayscale mask. After experimenting with different LiDAR processing software, I developed a repeatable method for **extracting tree locations from LiDAR data** and creating a tree placement map that could be used with the Biome Tool ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/13-isolating-trees/)). 
 
 *For an additional way to explore the processed tree-only data, I created a web-based 3D point-cloud viewer using* [**Potree Interactive Viewer**](https://kingstu90.github.io/LiDAR-to-Heightmap-Tutorial-Website/potree/examples/ridge_motorsports_park_trees_only.html)
 
@@ -111,22 +111,11 @@ Discovering the [**Biome Tool**](https://documentation.beamng.com/world_editor/t
   </tr>
 </table>
 
-I also needed a way to **reduce the force-feedback noise without manually smoothing the terrain.** My solution was to scale the LiDAR data to **50%** before generating the heightmap, and then return the terrain back to its original scale in the BeamNG World Editor ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/08-scale-50/)).
+I also needed a way to **reduce the force-feedback noise without manually smoothing the terrain.** My solution was to scale the LiDAR data to 50% before generating the heightmap, and then return the terrain back to its original scale in the BeamNG World Editor ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/08-scale-50/)).
 
 *In addition, the ground-only processed data is also available as a subsampled point cloud in the* [**Potree Interactive Viewer**](https://kingstu90.github.io/LiDAR-to-Heightmap-Tutorial-Website/potree/examples/ridge_motorsports_park_ground_only_subsample.html)
 
 **Finally, I wanted to eliminate the need to hand-paint the terrain**. The main problem I encountered when using imagery such as Google Maps for a basemap was that the imagery and heightmap could become increasingly misaligned over a large area. To solve this, I colorize the point cloud with the imagery and then create the basemap from the colorized point cloud ([**detailed explanation**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/11-creating-the-basemap-cloudcompare/)).
-
-<figure style="text-align: center; margin: auto;">
-  <img
-    src="/LiDAR-to-Heightmap-Tutorial-Website/photos/00_layermap_grass.webp"
-    alt="Hand painted grass layer"
-    style="max-width: 50%; height: auto;"
-  >
-  <figcaption style="margin-top: 8px; font-style: italic;">
-    Hand Painted Grass Layer
-  </figcaption>
-</figure>
 
 >[!NOTE]
 >**Point cloud** in this tutorial refers to `.laz` or `.las` files.
