@@ -184,8 +184,8 @@ chmod +x run_pipeline.sh
 **Individual processing scripts can then be run through Docker:**
 
 ```bash
-# Example: Step 3 code
-./run_pipeline.sh 03_reproject.sh
+# This is only an example. This is the code used in Step 4.
+./run_pipeline.sh 04_colorize.sh
 ```
 
 >[!NOTE]
