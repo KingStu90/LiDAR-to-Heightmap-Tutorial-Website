@@ -60,7 +60,7 @@ My goal with this tutorial is to provide a reproducible workflow while introduci
 
 <table>
   <tr>
-    <th colspan="2" align="center">Initial Manual Approach (100+ hrs)</th>
+    <th colspan="2" align="center">Initial Manual Approach</th>
   </tr>
   <tr>
     <td align="center" width="50%">
