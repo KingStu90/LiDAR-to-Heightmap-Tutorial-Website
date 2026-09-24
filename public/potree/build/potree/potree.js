@@ -66554,7 +66554,6 @@ void main() {
 
 			let response = await fetch(hierarchyPath, {
 				headers: {
-					'content-type': 'multipart/byteranges',
 					'Range': `bytes=${first}-${last}`,
 				},
 			});
