@@ -14,7 +14,7 @@ The complete project files, scripts, and example data used in this tutorial 
 
 <br>
 
-#### GIS Personal Project <br>
+**GIS Personal Project** <br>
 *Washington Oso Landslide: A Multi-Year LiDAR Analysis (2013, 2014, and 2022)* <br>
 [**ArcGIS StoryMap**](https://storymaps.arcgis.com/stories/bd86022c66564f0ba8f855726c663901)
 
