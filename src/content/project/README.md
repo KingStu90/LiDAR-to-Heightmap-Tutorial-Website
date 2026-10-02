@@ -12,9 +12,13 @@ The complete project files, scripts, and example data used in this tutorial 
 
 [**Start the Tutorial**](/LiDAR-to-Heightmap-Tutorial-Website/tutorial/01-downloading-point-cloud-data/) →
 
-**GIS Personal Project**
-Washington Oso Landslide: A Multi-Year LiDAR Analysis (2013, 2014, and 2022)
+<br>
+
+**GIS Personal Project**\
+*Washington Oso Landslide: A Multi-Year LiDAR Analysis (2013, 2014, and 2022)*\
 [**ArcGIS StoryMap**](https://storymaps.arcgis.com/stories/bd86022c66564f0ba8f855726c663901)
+
+<br>
 
 <table>
   <thead>
