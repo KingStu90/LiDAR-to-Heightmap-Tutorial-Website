@@ -221,26 +221,6 @@ chmod +x run_pipeline.sh
 
 ***
 
-### About Me
-
-I enjoy building things, figuring out how they work, and finding ways to solve problems with the tools and information available.
-
-When I first started working with LiDAR data, my goal was simply to create a heightmap for a BeamNG.Drive map. I saw this project as a way to give something back to the modding and open-source communities that I've benefited from over the years. As I built the project, I realized how much I enjoyed working with LiDAR data. I found it interesting how much information could be extracted from a single dataset and how that information could be used to solve different problems. Rather than manually deciding where things like trees should go or how terrain should be shaped, I found it much more interesting to figure out how the data could make those decisions for me.
-
-My interest in LiDAR also connects with my interest in drones. I originally got my Part 107 license to do FPV filming. While I enjoyed building and flying drones, I found that the artistic side of planning shots and editing footage wasn't as interesting to me as experimenting with different drone builds. Discovering the GIS field and learning to build pipelines to process LiDAR data has given me another way to explore my interest in drones beyond filming.
-
-*Disclaimer: This project has been a valuable experience in learning to write, understand, and apply code to real-world GIS workflows. I used the free version of ChatGPT to help with the majority of the scripts. However, it took considerable planning, modifying, and testing to ensure they worked across multiple use cases. I have intentionally kept the “Native Execution” commands as simple as possible so that users with limited programming experience can hopefully modify the existing script without the help of AI.*
-
-***
-
-### Feedback & Support
-
-If you find an issue with the tutorial, have a question, or have feedback on the workflow, I'd be happy to hear from you at <b>kingstuart75@gmail.com</b>.
-
-*Please don't send file attachments. I can't guarantee that I will open files or links sent by email.*
-
-If the tutorial helped you out and you'd like to support the project, the easiest way is to **share the link** with someone who might find it useful. You can also **buy me a coffee**.
-
 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="StuartKing" data-color="#FFDD00" data-emoji="" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
 
 ***
